@@ -2,3 +2,7 @@
 Theme Name: Hansa-Theme
 Author: Moritz und Julius
 */
+
+body {
+    background-color: pink;
+}
