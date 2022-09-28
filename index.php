@@ -10,7 +10,6 @@ if(have_posts())
 
         echo "<div class'POST-ID'>";
         the_title('<h2>', '</h2>');
-        the_content();
         echo "</div>";
     }
 } else
