@@ -167,7 +167,7 @@ body {
   margin-top: 10vh;
   display: grid;
   grid-template-rows: 30vw 1fr;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
 }
 
 /*Ende Twitch Box*//*# sourceMappingURL=style.css.map */
