@@ -7,114 +7,97 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .slider {
-  width: 100vh;
-  height: 500px;
+  width: 99vw;
+  height: 70vh;
   overflow: hidden;
+  position: relative;
 }
-
-.slides {
+.slider .slides {
   width: 500%;
   height: 500px;
   display: flex;
 }
-
-.slides input {
+.slider .slides input {
   display: none;
 }
-
-.slide {
+.slider .slide {
   width: 20%;
   transition: 2s;
 }
-
-.slide img {
+.slider .slide img {
   width: 100%;
-  height: 500px;
+  height: 70vh;
 }
-
-.navigation-manual {
+.slider .navigation-manual {
   position: absolute;
   width: 100%;
-  margin-top: -40px;
+  bottom: 10px;
   display: flex;
   justify-content: center;
 }
-
-.manual-btn {
+.slider .manual-btn {
   border: 2px solid #40D3DC;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 }
-
-.manual-btn:not(:last-child) {
+.slider .manual-btn:not(:last-child) {
   margin-right: 40px;
 }
-
-.manual-btn:hover {
+.slider .manual-btn:hover {
   background: #40D3DC;
 }
-
-#radio1:checked ~ .first {
+.slider #radio1:checked ~ .first {
   margin-left: 0;
 }
-
-#radio2:checked ~ .first {
+.slider #radio2:checked ~ .first {
   margin-left: -20%;
 }
-
-#radio3:checked ~ .first {
+.slider #radio3:checked ~ .first {
   margin-left: -40%;
 }
-
-#radio4:checked ~ .first {
+.slider #radio4:checked ~ .first {
   margin-left: -60%;
 }
-
-.navigation-auto {
+.slider .navigation-auto {
   position: absolute;
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 460px;
+  bottom: 10px;
 }
-
-.navigation-auto div {
+.slider .navigation-auto div {
   border: 2px solid #40D3DC;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
 }
-
-.navigation-auto div:not(:last-child) {
+.slider .navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+.slider #radio1:checked ~ .navigation-auto .auto-btn1 {
   background: #40D3DC;
 }
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+.slider #radio2:checked ~ .navigation-auto .auto-btn2 {
   background: #40D3DC;
 }
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+.slider #radio3:checked ~ .navigation-auto .auto-btn3 {
   background: #40D3DC;
 }
-
-#radio4:checked ~ .navigation-auto .auto-btn4 {
+.slider #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #40D3DC;
 }
 
 /*Ende Image Slider*/
 /*Anfang Twitch Box*/
 .twitch-box {
-  width: 30vh;
-  height: 35vh;
+  width: 20vw;
+  height: 25vw;
   position: relative;
 }
 .twitch-box .content {
@@ -177,15 +160,16 @@ body {
   margin-left: 10vh;
 }
 .twitch-box .content img {
-  height: 30vh;
-  width: 30vh;
+  height: 20vw;
+  width: 20vw;
 }
 
 .twitch-boxen {
   margin-top: 10vh;
   display: grid;
-  grid-template-rows: 50vh 1fr 10vh;
+  grid-template-rows: 50vw 1fr 10vh;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
-/*Ende Twitch Box*//*# sourceMappingURL=style.css.map */
+/*Ende Twitch Box*/
+/*Hallo*//*# sourceMappingURL=style.css.map */
