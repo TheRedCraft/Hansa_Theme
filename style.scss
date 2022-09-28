@@ -1,0 +1,201 @@
+/*
+Theme Name: Hansa-Theme
+Author: Moritz und Julius
+*/
+
+
+/*Anfang Slider*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 500px;
+  }
+  
+
+  
+  .navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+  /*Ende Image Slider*/
+
+  /*Anfang Twitch Box*/
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
+$ciWhite: #ffffff;
+$ciGreen: #46fcb4;
+$second: #0c1016;
+
+
+
+$prime: #ff00aa;
+$second: #0c1016;
+
+$borderSize: 1rem;
+
+.twitch-box {
+	width: 15rem;
+	height: 22rem;
+	position: relative;
+
+	.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		transition: all 200ms;
+	}
+	.twitch-border-effect {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: $prime;
+
+		.top-corner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-top: $borderSize solid transparent;
+			border-bottom: $borderSize solid transparent;
+			border-right: $borderSize solid $prime;
+			transition: all 200ms;
+			transform-origin: left top;
+			transform: translate(0, 0) scale(0);
+		}
+		.bottom-corner {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-bottom: $borderSize solid transparent;
+			border-right: $borderSize solid transparent;
+			border-top: $borderSize solid $prime;
+			transition: all 200ms;
+			transform-origin: center bottom;
+			transform: translate(0, 0) scale(0);
+		}
+	}
+	&:hover,
+	&:focus {
+		.content {
+			transform: translate(-$borderSize, -$borderSize);
+		}
+		.top-corner {
+			transform: translate($borderSize, 0) scale(1);
+		}
+		.bottom-corner {
+			transform: translate(-$borderSize, -$borderSize) scale(1);
+		}
+	}
+}
+
+/*Ende Twitch Box*/
