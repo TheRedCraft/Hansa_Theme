@@ -10,7 +10,7 @@ body {
 }
 
 .slider {
-  width: 100%;
+  width: 100vh;
   height: 500px;
   overflow: hidden;
 }
@@ -113,11 +113,12 @@ body {
 /*Ende Image Slider*/
 /*Anfang Twitch Box*/
 .twitch-box {
-  width: 15rem;
-  height: 22rem;
+  width: 30vh;
+  height: 35vh;
   position: relative;
 }
 .twitch-box .content {
+  border: 2px solid #000000;
   position: absolute;
   top: 0;
   left: 0;
@@ -142,9 +143,9 @@ body {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 1rem solid transparent;
-  border-bottom: 1rem solid transparent;
-  border-right: 1rem solid #ff00aa;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-right: 0.5rem solid #ff00aa;
   transition: all 200ms;
   transform-origin: left top;
   transform: translate(0, 0) scale(0);
@@ -155,21 +156,36 @@ body {
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  border-top: 1rem solid #ff00aa;
+  border-bottom: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid #ff00aa;
   transition: all 200ms;
   transform-origin: center bottom;
   transform: translate(0, 0) scale(0);
 }
 .twitch-box:hover .content, .twitch-box:focus .content {
-  transform: translate(-1rem, -1rem);
+  transform: translate(-0.5rem, -0.5rem);
 }
 .twitch-box:hover .top-corner, .twitch-box:focus .top-corner {
-  transform: translate(1rem, 0) scale(1);
+  transform: translate(0.5rem, 0) scale(1);
 }
 .twitch-box:hover .bottom-corner, .twitch-box:focus .bottom-corner {
-  transform: translate(-1rem, -1rem) scale(1);
+  transform: translate(-0.5rem, -0.5rem) scale(1);
+}
+
+.twitch-box {
+  margin-left: 10vh;
+}
+.twitch-box .content img {
+  height: 30vh;
+  width: 30vh;
+}
+
+.twitch-boxen {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-rows: 50vh 1fr 10vh;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 /*Ende Twitch Box*//*# sourceMappingURL=style.css.map */

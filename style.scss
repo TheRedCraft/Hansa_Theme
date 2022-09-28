@@ -12,7 +12,7 @@ body{
   }
   
   .slider{
-    width: 100%;
+    width: 100vh;
     height: 500px;
     overflow: hidden;
   }
@@ -131,14 +131,18 @@ $second: #0c1016;
 $prime: #ff00aa;
 $second: #0c1016;
 
-$borderSize: 1rem;
+$borderSize: 0.5rem;
+$twitch-width: 30vh;
+$twitch-height: 35vh; 
+
 
 .twitch-box {
-	width: 15rem;
-	height: 22rem;
+	width: $twitch-width;
+	height: $twitch-height;
 	position: relative;
 
 	.content {
+		border: 2px solid #000000;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -196,6 +200,23 @@ $borderSize: 1rem;
 			transform: translate(-$borderSize, -$borderSize) scale(1);
 		}
 	}
+}
+
+.twitch-box {
+	margin-left: 10vh;
+	.content {
+		img {
+			height: $twitch-width;
+			width: $twitch-width;
+		}
+	}
+}
+
+.twitch-boxen {
+	margin-top: 10vh;
+	display: grid; 
+	grid-template-rows: 50vh 1fr 10vh; 
+	grid-template-columns: 25% 25% 25% 25%; 
 }
 
 /*Ende Twitch Box*/
