@@ -15,7 +15,7 @@ body{
   $slider-height: 70vh;
 
   .slider{
-    width: 99vw;
+    width: 100vw;
     height: $slider-height;
     overflow: hidden;
 	position: relative;
@@ -211,7 +211,6 @@ $twitch-height: 25vw;
 }
 
 .twitch-box {
-	margin-left: 10vh;
 	.content {
 		img {
 			height: $twitch-width;
@@ -221,9 +220,11 @@ $twitch-height: 25vw;
 }
 
 .twitch-boxen {
+	margin-left: 10vh;
+	margin-right: 10vh;
 	margin-top: 10vh;
 	display: grid;
-	grid-template-rows: 50vw 1fr 10vh;
+	grid-template-rows: 30vw 1fr;
 	grid-template-columns: 25% 25% 25% 25%;
 }
 
