@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>News</h1>
+<h1 class="section-heading">News</h1>
 
 <?php
 
@@ -17,7 +17,7 @@ if(have_posts())
       echo "<div class='twitch-box'>";
       echo "<div class='content'>";
       the_post_thumbnail();
-      the_title('<h2>', '</h2>');
+      the_title('<h2 class="twitch-head">', '</h2>');
       echo "</div>";
       echo "<div class='twitch-border-effect'>";
       echo "<div class='top-corner'></div>";
@@ -37,7 +37,7 @@ if(have_posts())
 
 wp_reset_postdata();
 
-echo "<h2>Ueberschrift</h2>";
+echo "<h1 class='section-heading'>Ueberschrift</h1>";
 
 if (have_posts()) {
   echo "<div class='twitch-boxen'>";
@@ -49,7 +49,7 @@ if (have_posts()) {
       echo "<div class='twitch-box'>";
       echo "<div class='content'>";
       the_post_thumbnail();
-      the_title('<h2>', '</h2>');
+      the_title('<h2 class="twitch-head">', '</h2>');
       echo "</div>";
       echo "<div class='twitch-border-effect'>";
       echo "<div class='top-corner'></div>";
