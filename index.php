@@ -27,14 +27,14 @@ if(have_posts())
       $i += 1;
     } else
     {
-        echo '  ';
+        echo '';
   }
 }
     echo "</div>";
 } else {
   echo "No Posts where Found";
 }
-
+$i = 0;
 wp_reset_postdata();
 
 echo "<h1 class='section-heading'>Ueberschrift</h1>";
