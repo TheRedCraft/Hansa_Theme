@@ -27,15 +27,20 @@ if(have_posts())
       $i += 1;
     } else
     {
-        echo 'falafel';
+        echo '  ';
   }
 }
     echo "</div>";
 } else {
   echo "No Posts where Found";
 }
+
 wp_reset_postdata();
+
+echo "<h2>Ueberschrift</h2>";
+
 if (have_posts()) {
+  echo "<div class='twitch-boxen'>";
   while (have_posts() && $i <= 7) {
     the_post();
 
@@ -54,6 +59,7 @@ if (have_posts()) {
       $i += 1;
     }
   }
+  echo "</div>";
 } else
 {
     echo 'No Posts where Found';
