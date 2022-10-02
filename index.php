@@ -8,13 +8,14 @@ $args = array(
   'post_type' => 'post',
   'post_status' => 'publish',
   'posts_per_page' => 8,
-  'category_name' => 'Test'
+  'category_name' => 'News'
 );
 
 $loop = new WP_Query($args);
 
 if( $loop->have_posts())
 {
+  echo 'posts were found';
   echo "<div class='twitch-boxen'>";
   while($loop->have_posts())
   {
@@ -31,6 +32,8 @@ if( $loop->have_posts())
     echo "</div>";
   }
   echo "</div>";
+} else {
+  echo "no Posts are in this category";
 }
 
 wp_reset_postdata();

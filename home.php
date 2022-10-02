@@ -8,7 +8,7 @@ $args = array(
   'post_type' => 'post',
   'post_status' => 'publish',
   'posts_per_page' => 8,
-  'category_name' => 'Test'
+  'category_name' => 'news'
 );
 
 $loop = new WP_Query($args);
@@ -31,6 +31,8 @@ if( $loop->have_posts())
     echo "</div>";
   }
   echo "</div>";
+} else {
+  echo "No Posts were Found";
 }
 
 wp_reset_postdata();
