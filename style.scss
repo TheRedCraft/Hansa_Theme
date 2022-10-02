@@ -12,7 +12,7 @@ body{
 	overflow-x: hidden;
   }
 
-  $slider-height: 70vh;
+  $slider-height: 100vh;
 
   .slider{
     width: 100vw;
@@ -224,8 +224,77 @@ $twitch-height: 25vw;
 	margin-right: 10vh;
 	margin-top: 10vh;
 	display: grid;
-	grid-template-rows: 30vw 1fr;
+	grid-template-rows: 30vw 30vw 30vw 1fr;
 	grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
 }
 
 /*Ende Twitch Box*/
+
+/*Footer Anfang*/
+
+.section-heading {
+	display: block;
+	font-size: 60px;
+	margin-left: 10vh;
+  }
+  .footer {
+	width: 100%;
+	height: 60vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display:flex;
+	align-items: center;
+	margin-top: 50vh;
+  }
+  .footer a {
+	text-decoration: underline;
+	color: white;
+  }
+  .footer ul {
+	display: block;
+	list-style: none;
+	bottom: 100px
+  }
+  .footer li {
+	margin-bottom: 10px;
+  }
+  .footer li:first {
+	margin-top: 40px;
+  }
+  .copyright-bar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.84);
+	height: 140px;
+	color: white;
+	font-size: 20px;
+  }
+
+/*Footer Ende*/
+
+/*Menu Bar Anfang*/
+
+.first_menu {
+	display: flex;
+	align-items: center;
+	height: 10vh;
+	width: 100vw;
+	background-color: black;
+	padding: 3px;
+}
+
+.first_menu img {
+	justify-self: flex-start;
+	border-radius: 100px;
+	height: 10vh;
+	width: 10vh;
+}
+.first_search {
+	display: flex;
+	justify-content: center;
+}
+.first_nav {
+	position: absolute;
+	right: 0;
+}

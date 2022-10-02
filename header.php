@@ -4,14 +4,22 @@
     <?php wp_head(); ?>
 </head>
 <body>
-
-    <?php get_search_form(); ?>
+    <?php 
+      echo "<div class='first_menu'>";
+      echo "<img src='/wordpress/wp-content/themes/Hansa_Theme/img/1.jpg'>";
+      echo "<div class='first_search'>";
+      get_search_form(); 
+      echo "</div>";
+    ?>
 
 <nav>
     <?php
+        echo "<div class='first_nav'>";
         wp_nav_menu(array(
             'theme_location' => 'header-menu',
         ));
+        echo "</div>";
+      echo "</div>"
     ?>
 </nav>
 
@@ -25,18 +33,17 @@
         <input type="radio" name="radio-btn" id="radio4">
 
         <div class="slide first">
-          <img src=".img/1.jpg" alt="">
+          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/1.jpg" alt="">
         </div>
         <div class="slide">
-          <img src="../img/2.jpg" alt="">
+          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/2.jpg" alt="">
         </div>
         <div class="slide">
-          <img src="../img/3.jpg" alt="">
+          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/3.jpg" alt="">
         </div>
         <div class="slide">
-          <img src="../img/4.jpg" alt="">
+          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/4.jpg" alt="">
         </div>
-
         <div class="navigation-auto">
           <div class="auto-btn1"></div>
           <div class="auto-btn2"></div>
