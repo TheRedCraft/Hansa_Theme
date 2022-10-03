@@ -18,3 +18,6 @@ just copy it in the /wordpress/wp-content/themes/ directory and activate the the
 
 ### Archive pages
 
+### wp_search()
+- Search.php
+- wp_search_form()
