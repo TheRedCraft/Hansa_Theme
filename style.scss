@@ -224,7 +224,7 @@ $twitch-height: 25vw;
 	margin-right: 10vh;
 	margin-top: 10vh;
 	display: grid;
-	grid-template-rows: 30vw 30vw 30vw 1fr;
+	grid-template-rows: repeat(99, 30vw);
 	grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
 }
 
@@ -282,7 +282,8 @@ $twitch-height: 25vw;
 	width: 100vw;
 	background-color: black;
 	padding: 3px;
-  position: fixed;
+  	position: fixed;
+	z-index: 100;
 }
 
 .first_menu img {

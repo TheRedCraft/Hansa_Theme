@@ -2,8 +2,6 @@
 
 <?php
 
-query_posts('posts_per_page=100');
-
 if(have_posts())
 {
     echo "<div class='twitch-boxen'>";

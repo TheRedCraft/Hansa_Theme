@@ -3,7 +3,7 @@
 <head>
     <?php wp_head(); ?>
 </head>
-<body>
+<body onload="searchgrid()">
     <?php 
       echo "<div class='first_menu'>";
       echo "<img src='/wordpress/wp-content/themes/Hansa_Theme/img/1.jpg'>";
