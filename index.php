@@ -29,6 +29,7 @@ $loop = new WP_Query($args);
     </div>
     </a>
   <?php endwhile; ?>
+  <p>test</p>
   </div>
   <?php endif; ?>
 

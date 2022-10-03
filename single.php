@@ -1,12 +1,7 @@
 <?php get_header(); ?>
 
-<?php 
-    
-    $id = $_GET['id'];
+<?php
 
-    $args = array(
-        'p' = $id
-    )
 if(have_posts())
 {
     while(have_posts())
