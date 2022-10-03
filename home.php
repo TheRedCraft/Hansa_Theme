@@ -17,7 +17,7 @@ if($loop->have_posts())
   while($loop->have_posts())
   {
     $loop->the_post();
-    echo "<a href'".the_permalink(get_the_ID())."'>";
+    echo "<a href='".get_the_permalink()."'>";
     echo "<div class='twitch-box'>";
     echo "<div class='content'>";
     the_post_thumbnail();
@@ -54,6 +54,7 @@ if($loop2->have_posts())
   while($loop2->have_posts())
   {
     $loop2->the_post();
+    echo "<a href='".get_the_permalink()."'>";
     echo "<div class='twitch-box'>";
     echo "<div class='content'>";
     the_post_thumbnail();
@@ -64,6 +65,7 @@ if($loop2->have_posts())
     echo "<div class='bottom-corner'></div>";
     echo "</div>";
     echo "</div>";
+    echo "</a>";
   }
   echo "</div>";
 }
