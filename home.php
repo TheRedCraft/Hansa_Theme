@@ -6,7 +6,7 @@ $args = array(
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
-  'category_name' => 'News'
+  'category_name' => 'news'
 );
 
 $loop = new WP_Query($args);
@@ -35,15 +35,15 @@ if($loop->have_posts())
 
 ?>
 
-<?php wp_reset_postdata(); ?>
-
 <?php
+
+ wp_reset_postdata();
 
 $args2 = array(
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
-  'category_name' => 'Startseite'
+  'category_name' => 'startseite',
 );
 
 $loop2 = new WP_Query($args2);
