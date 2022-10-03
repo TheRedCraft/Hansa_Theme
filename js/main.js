@@ -8,13 +8,22 @@ setInterval(function(){
 }, 5000);
 
 function searchgrid() {
-  const twitch_boxen = document.querySelectorAll(".twitch-box");
-  colls = Math.ceil(twitch_boxen.length / 4);
-  console.log('COlls: '+ colls);
-  let cssgrid = "";
-  for(i = 0; i < colls; i++) {
-    cssgrid += '30vw ';
+  console.log('hi')
+  const twitch_boxen = document.querySelectorAll(".twitch-boxen");
+  console.log(twitch_boxen);
+  for(i = 0; i < twitch_boxen.length; i++) {
+    colls = Math.ceil(twitch_boxen[i].length / 4);
+    let cssgrid = "";
+    for(i = 0; i < colls; i++) {
+      cssgrid += '30vw ';
+    }
+    document.querySelector('.twitch-boxen').style.gridTemplateRows = cssgrid;
   }
-  document.querySelector('.twitch-boxen').style.gridTemplateRows = cssgrid;
-  console.log(cssgrid)
 }
+
+function dislplayscrolled() {
+  document.querySelector('.first_menu').style.oppacity = window.scrollY;
+  console.log(window.scrollY)
+}
+
+window.addEventListener('scroll', dislplayscrolled);

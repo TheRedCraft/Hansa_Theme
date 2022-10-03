@@ -12,29 +12,27 @@ $args = array(
 );
 
 $loop = new WP_Query($args);
+?>
+<?php if( $loop->have_posts()): ?>
+  <div class='twitch-boxen'>
+  <?php while($loop->have_posts()):?>
+    <?php $loop->the_post(); $id = get_the_ID(); ?>
+    <a href="/wordpress/">
+    <div class='twitch-box'>
+    <div class='content'>
+    <?php the_post_thumbnail(); the_title('<h2 class="twitch-head">', '</h2>');?>
+    </div>
+    <div class='twitch-border-effect'>
+    <div class='top-corner'></div>
+    <div class='bottom-corner'></div>
+    </div>
+    </div>
+    </a>
+  <?php endwhile; ?>
+  </div>
+  <?php endif; ?>
 
-if( $loop->have_posts())
-{
-  echo 'posts were found';
-  echo "<div class='twitch-boxen'>";
-  while($loop->have_posts())
-  {
-    $loop->the_post();
-    echo "<div class='twitch-box'>";
-    echo "<div class='content'>";
-    the_post_thumbnail();
-    the_title('<h2 class="twitch-head">', '</h2>');
-    echo "</div>";
-    echo "<div class='twitch-border-effect'>";
-    echo "<div class='top-corner'></div>";
-    echo "<div class='bottom-corner'></div>";
-    echo "</div>";
-    echo "</div>";
-  }
-  echo "</div>";
-} else {
-  echo "no Posts are in this category";
-}
+<?php
 
 wp_reset_postdata();
 
@@ -48,26 +46,32 @@ $args2 = array(
 );
 
 $loop2 = new WP_Query($args2);
+?>
 
-if( $loop2->have_posts())
-{
-  echo "<div class='twitch-boxen'>";
-  while($loop2->have_posts())
-  {
-    $loop2->the_post();
-    echo "<div class='twitch-box'>";
-    echo "<div class='content'>";
-    the_post_thumbnail();
-    the_title('<h2 class="twitch-head">', '</h2>');
-    echo "</div>";
-    echo "<div class='twitch-border-effect'>";
-    echo "<div class='top-corner'></div>";
-    echo "<div class='bottom-corner'></div>";
-    echo "</div>";
-    echo "</div>";
-  }
-  echo "</div>";
-}
+<?php if( $loop2->have_posts()): ?>
+  <div class='twitch-boxen'>
+  <?php while($loop2->have_posts()):?>
+    <?php $loop2->the_post();
+    $id = get_the_ID(); ?>
+    <a href="/wordpress/">
+    <div class='twitch-box'>
+    <div class='content'>
+    <?php the_post_thumbnail();
+    the_title('<h2 class="twitch-head">', '</h2>');?>
+    </div>
+    <div class='twitch-border-effect'>
+    <div class='top-corner'></div>
+    <div class='bottom-corner'></div>
+    </div>
+    </div>
+    </a>
+  <?php endwhile; ?>
+  </div>
+  <?php endif; ?>
+
+<?php
+
+echo 'Index PHP';
 
 ?>
 

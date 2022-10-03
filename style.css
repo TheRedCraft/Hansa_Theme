@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  color: black;
+}
+
+* a {
+  color: black;
+}
+
 .slider {
   width: 100vw;
   height: 100vh;
@@ -231,18 +239,20 @@ body {
 }
 
 .first_menu img {
-  justify-self: flex-start;
+  position: absolute;
   border-radius: 100px;
   height: 10vh;
   width: 10vh;
+  left: 10px;
 }
 
 .first_search {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  right: 12vw;
 }
 
 .first_nav {
   position: absolute;
-  right: 0;
+  right: 2vw;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */
