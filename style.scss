@@ -13,13 +13,9 @@ body{
 	background-color: #dddbdb;
   }
 
-  * {
+a {
 	color: black;
-  }
-
-  * a {
-	color: black;
-  }
+}
 
   $slider-height: 100vh;
   $slider-prime: #3660E3;
@@ -170,7 +166,7 @@ body{
   /*Anfang Twitch Box*/
 
 
-$prime: #3CD2FB;
+$prime: #143e97;
 $second: #0c1016;
 
 $borderSize: 0.5rem;
@@ -300,7 +296,7 @@ $twitch-height: 25vw;
 	align-items: center;
 	background-color: #222;
 	height: 140px;
-	color: white !important;
+	color: white;
 	font-size: 20px;
   }
 
