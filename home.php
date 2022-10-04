@@ -37,7 +37,7 @@ if($loop->have_posts())
 
 <?php
 
- /*wp_reset_postdata();
+wp_reset_postdata();
 
 $args2 = array(
   'posts_per_page' => 8,
@@ -69,6 +69,6 @@ if($loop2->have_posts())
   }
   echo "</div>";
 }
-*/
+
 ?>
 <?php get_footer(); ?>

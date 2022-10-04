@@ -1,0 +1,45 @@
+<?php get_header(); ?>
+
+<h1>news Home</h1>
+
+<div class="twitch-boxen">
+  <?php query_posts('category_name=startseite&posts_per_page=8') ?>
+        <?php while (have_posts()) : the_post(); ?>
+          <a href="<?php the_permalink(); ?>">
+            <div class="twitch-box">
+              <div class="content">
+              <?php the_thumbnail(); ?>
+              <?php the_title('<h2 class="twitch-head">', '</h2>'); ?>
+              </div>
+              <div class="twitch-border-effect">
+                <div class="top-corner"></div>
+                <div class="bottom-corner"></div>
+              </div>
+            </div>
+          </a>
+        <?php endwhile;?>
+</div>
+
+<?php wp_reset_postdata(); ?>
+
+<h1>startseite</h1>
+
+<div class="twitch-boxen">
+  <?php query_posts('category_name=startseite&posts_per_page=8') ?>
+        <?php while (have_posts()) : the_post(); ?>
+          <a href="<?php the_permalink(); ?>">
+            <div class="twitch-box">
+              <div class="content">
+              <?php the_thumbnail(); ?>
+              <?php the_title('<h2 class="twitch-head">', '</h2>'); ?>
+              </div>
+              <div class="twitch-border-effect">
+                <div class="top-corner"></div>
+                <div class="bottom-corner"></div>
+              </div>
+            </div>
+          </a>
+        <?php endwhile;?>
+</div>
+
+<?php get_footer() ?>
