@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<h2 class="section-heading">News</h2>
+
 <?php
 
 $args = array(
@@ -34,6 +36,9 @@ if($loop->have_posts())
 }
 
 ?>
+
+<h2 class="section-heading">Startseite</h2>
+
 
 <?php
 
