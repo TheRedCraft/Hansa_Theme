@@ -13,7 +13,8 @@ function searchgrid() {
   console.log(twitch_boxen);
   
   for(i = 0; i < twitch_boxen.length; i++) {
-    colls = Math.ceil(twitch_boxen[i].length / 4);
+    twitch_boxen_count = twitch_boxen[i].childElementCount;
+    let colls = Math.ceil(twitch_boxen_count / 4);
     let cssgrid = "";
     for(e = 0; e < colls; e++) {
       cssgrid += '30vw ';
@@ -25,7 +26,6 @@ function searchgrid() {
 
 function dislplayscrolled() {
   document.querySelector('.first_menu').style.oppacity = window.scrollY;
-  console.log(window.scrollY)
 }
 
 window.addEventListener('scroll', dislplayscrolled);
