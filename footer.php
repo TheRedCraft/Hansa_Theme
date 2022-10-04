@@ -5,6 +5,6 @@
   ) ) ?>
 </div>
 <div class="copyright-bar"><p>Copyright 2022</p> </div>
-<script src="/wordpress/wp-content/themes/Hansa_Theme/js/main.js"></script>
+<script src="/wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
 </body>
 </html>

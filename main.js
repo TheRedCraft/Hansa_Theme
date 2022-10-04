@@ -8,17 +8,19 @@ setInterval(function(){
 }, 5000);
 
 function searchgrid() {
-  console.log('hi')
+  console.log('hi');
   const twitch_boxen = document.querySelectorAll(".twitch-boxen");
   console.log(twitch_boxen);
+  
   for(i = 0; i < twitch_boxen.length; i++) {
     colls = Math.ceil(twitch_boxen[i].length / 4);
     let cssgrid = "";
-    for(i = 0; i < colls; i++) {
+    for(e = 0; e < colls; e++) {
       cssgrid += '30vw ';
     }
-    document.querySelector('.twitch-boxen').style.gridTemplateRows = cssgrid;
+    twitch_boxen[i].style.gridTemplateRows = cssgrid;
   }
+  
 }
 
 function dislplayscrolled() {
