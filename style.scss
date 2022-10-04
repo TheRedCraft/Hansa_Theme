@@ -10,7 +10,7 @@ body{
     padding: 0;
     height: 100vh;
 	overflow-x: hidden;
-	background-color: #dddbdb;
+	background-color: #ffffff;
   }
 
 a {
@@ -180,7 +180,7 @@ $twitch-height: 25vw;
 	position: relative;
 
 	.content {
-		border: 2px solid #000000;
+		border: 1.5px solid lightgray;
 		position: absolute;
 		top: 0;
 		left: 0;
