@@ -6,7 +6,14 @@ setInterval(function(){
   if(counter > 8){
     counter = 1;
   }
+  document.querySelector('.first').style.marginLeft = -((counter - 1) * 20)
+  name_dot = '.auto-btn' + counter;
+  document.querySelector(name_dot).style.background = '#3660E3';
 }, 5000);
+
+function make_active(i) {
+    counter = i;
+}
 
 function searchgrid() {
     const twitch_boxen = document.querySelectorAll(".twitch-boxen");

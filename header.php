@@ -6,7 +6,7 @@
 <body onload="searchgrid()">
     <?php 
       echo "<div class='first_menu'>";
-      echo "<img src='/wordpress/wp-content/themes/Hansa_Theme/img/logo.png'>";
+      echo "<img src='/wordpress/wp-content/uploads/2022/10/logo.png'>";
       echo "<div class='first_search'>";
       get_search_form(); 
       echo "</div>";
@@ -27,61 +27,85 @@
 <div class="slider">
       <div class="slides">
 
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
-        <input type="radio" name="radio-btn" id="radio6">
-        <input type="radio" name="radio-btn" id="radio7">
-        <input type="radio" name="radio-btn" id="radio8">
+        <?php
+        
+        $category_id_sliderImg = get_cat_ID('sliderImg');
+        $category = get_category($category_id_sliderImg);
+        $count = $category->category_count;
 
-        <div class="slide first">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/header_Hauptgebaeude.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/Gaeste_aus_Ghana.jpeg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/Chemiebaum.jpeg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/header_Klassenrat.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/header_Natur.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/header_sportfest.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/header_wattwanderung.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="/wordpress/wp-content/themes/Hansa_Theme/img/Peace1.jpeg" alt="">
-        </div>
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-          <div class="auto-btn6"></div>
-          <div class="auto-btn7"></div>
-          <div class="auto-btn8"></div>
-        </div>
+        wp_reset_postdata();
 
-      </div>
+        $argsSlider = array(
+          'category_name' => 'sliderImg',
+          'posts_per_page' => 8
+        );
 
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-        <label for="radio5" class="manual-btn"></label>
-        <label for="radio6" class="manual-btn"></label>
-        <label for="radio7" class="manual-btn"></label>
-        <label for="radio8" class="manual-btn"></label>
-      </div>
+        if($count > 0)
+        {
+          $slideInputRadio = 1;
+          while($slideInputRadio <= $count)
+          {
+            echo '<input type="radio" name="radio-btn" id="radio' . $slideInputRadio . '" class="navigation_menu_slider" onclick="make_active(' . $slideInputRadio . ')">';
+            $slideInputRadio += 1;
+          }
+        }
+
+        wp_reset_postdata();
+        
+
+        $sliderLoop = new WP_Query($argsSlider);
+
+        if($sliderLoop->have_posts())
+        {
+          $slideCounter = 0;
+          while($sliderLoop->have_posts())
+          {
+            if($slideCounter == 0)
+            {
+              echo '<div class="slide first">';
+            }
+            else
+            {
+              echo '<div class="slide">';
+            }
+            $sliderLoop->the_post();
+            the_post_thumbnail();
+            echo "</div>";
+            $slideCounter += 1;
+          }
+        }
+
+
+        if($count > 0)
+        {
+          $slideBtnCounter = 1;
+          echo "<div class'navigation-auto'>";
+          while($slideBtnCounter <= $count)
+          {
+            echo "<div class='auto-btn".$slideBtnCounter."'>";
+            echo "</div>";
+            $slideBtnCounter += 1;
+          }
+          echo "</div>";
+        }
+
+        echo "</div>";
+
+        if($count > 0)
+        {
+          $slideLabelCounter = 1;
+          echo "<div class'navigation-manual'>";
+          while($slideLabelCounter <= $count)
+          {
+            echo "<label for='radio".$slideLabelCounter."' class='manual-btn'>";
+            echo "</label>";
+            $slideLabelCounter += 1;
+          }
+          echo "</div>";
+        }
+
+        wp_reset_postdata();
+
+        ?>
 
     </div>

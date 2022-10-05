@@ -4,6 +4,34 @@
 
 <?php
 
+$argsWichtig = array(
+  'posts_per_page' => 1,
+  'category_name' => 'wichtig'
+);
+
+$wichtigLoop = new WP_Query($argsWichtig);
+
+if($wichtigLoop->have_posts())
+{
+  while($wichtigLoop -> have_posts())
+  {
+    $wichtigLoop->the_post();
+    echo "<div class'wichtig-box'>";
+    echo "<div class'wichtig-heading'>";
+    the_title();
+    echo "</div>";
+    echo "<div class'wichtig-content'>";
+    the_content();
+    echo "</div>";
+    echo "<div class'wichtig-thumbnail'>";
+    the_post_thumbnail();
+    echo "</div>";
+    echo "</div>";
+  }
+}
+
+wp_reset_postdata();
+
 $args = array(
   'posts_per_page' => 8,
   'post_status' => 'publish',

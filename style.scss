@@ -25,9 +25,10 @@ body{
   $slider-prime: #3660E3;
   .slider{
     width: 100vw;
-    height: $slider-height;
+    height: $slider-height; 
     overflow: hidden;
 	position: relative;
+	
 
 
 
@@ -77,40 +78,9 @@ body{
 		background: $slider-prime;
 	  }
 
-	  #radio1:checked ~ .first{
-		margin-left: 0;
-	  }
-
-	  #radio2:checked ~ .first{
-		margin-left: -20%;
-	  }
-
-	  #radio3:checked ~ .first{
-		margin-left: -40%;
-	  }
-
-	  #radio4:checked ~ .first{
-		margin-left: -60%;
-	  }
-
-	  #radio5:checked ~ .first{
-		margin-left: -80%;
-	  }
-
-	  #radio6:checked ~ .first{
-		margin-left: -100%;
-	  }
-
-	  #radio7:checked ~ .first{
-		margin-left: -120%;
-	  }
-
-	  #radio8:checked ~ .first{
-		margin-left: -140%;
-	  }
 
 
-
+ 
 	  .navigation-auto{
 		position: absolute;
 		display: flex;
@@ -130,37 +100,7 @@ body{
 		margin-right: 40px;
 	  }
 
-	  #radio1:checked ~ .navigation-auto .auto-btn1{
-		background: $slider-prime;
-	  }
 
-	  #radio2:checked ~ .navigation-auto .auto-btn2{
-		background: $slider-prime;
-	  }
-
-	  #radio3:checked ~ .navigation-auto .auto-btn3{
-		background: $slider-prime;
-	  }
-
-	  #radio4:checked ~ .navigation-auto .auto-btn4{
-		background: $slider-prime;
-	  }
-
-	  #radio5:checked ~ .navigation-auto .auto-btn5{
-		background: $slider-prime;
-	  }
-
-	  #radio6:checked ~ .navigation-auto .auto-btn6{
-		background: $slider-prime;
-	  }
-
-	  #radio7:checked ~ .navigation-auto .auto-btn7{
-		background: $slider-prime;
-	  }
-
-	  #radio8:checked ~ .navigation-auto .auto-btn8{
-		background: $slider-prime;
-	  }
   }
 
 
