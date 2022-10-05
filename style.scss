@@ -10,16 +10,12 @@ body{
     padding: 0;
     height: 100vh;
 	overflow-x: hidden;
-	background-color: #dddbdb;
+	background-color: #ffffff;
   }
 
-  * {
+a {
 	color: black;
-  }
-
-  * a {
-	color: black;
-  }
+}
 
   $slider-height: 100vh;
   $slider-prime: #3660E3;
@@ -110,7 +106,7 @@ body{
   /*Anfang Twitch Box*/
 
 
-$prime: #3CD2FB;
+$prime: #143e97;
 $second: #0c1016;
 
 $borderSize: 0.5rem;
@@ -124,7 +120,7 @@ $twitch-height: 25vw;
 	position: relative;
 
 	.content {
-		border: 2px solid #000000;
+		border: 1.5px solid lightgray;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -213,7 +209,7 @@ $twitch-height: 25vw;
   .footer {
 	width: 100%;
 	height: 60vh;
-	background-color: #36a9e3bd;
+	background-color: #333;
 	display:flex;
 	align-items: center;
 	margin-top: 50vh;
@@ -238,7 +234,7 @@ $twitch-height: 25vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #36A8E3;
+	background-color: #222;
 	height: 140px;
 	color: white;
 	font-size: 20px;
@@ -282,7 +278,7 @@ $clr-background: var(--clr-background);
 	left: 10px;
 }
 .first_search {
-	position: absolute;
+	position: absolute; 
 	right: 12vw;
 }
 .first_nav {
