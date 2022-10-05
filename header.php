@@ -4,11 +4,11 @@
     <?php wp_head(); ?>
 </head>
 <body onload="searchgrid()">
-    <?php 
+    <?php
       echo "<div class='first_menu'>";
       echo "<img src='/wordpress/wp-content/uploads/2022/10/logo.png'>";
       echo "<div class='first_search'>";
-      get_search_form(); 
+      get_search_form();
       echo "</div>";
     ?>
 
@@ -28,7 +28,7 @@
       <div class="slides">
 
         <?php
-        
+
         $category_id_sliderImg = get_cat_ID('sliderImg');
         $category = get_category($category_id_sliderImg);
         $count = $category->category_count;
@@ -37,7 +37,8 @@
 
         $argsSlider = array(
           'category_name' => 'sliderImg',
-          'posts_per_page' => 8
+          'posts_per_page' => 8,
+          'status' => 'publish'
         );
 
         if($count > 0)
@@ -45,13 +46,15 @@
           $slideInputRadio = 1;
           while($slideInputRadio <= $count)
           {
-            echo '<input type="radio" name="radio-btn" id="radio' . $slideInputRadio . '" class="navigation_menu_slider" onclick="make_active(' . $slideInputRadio . ')">';
+            ?>
+            <input type="radio" name="radio-btn" id="radio<?php$slideInputRadio?>" class="navigation_menu_slider" onclick="make_active(<?php$slideInputRadio?>)">
+            <?php
             $slideInputRadio += 1;
           }
         }
 
         wp_reset_postdata();
-        
+
 
         $sliderLoop = new WP_Query($argsSlider);
 
@@ -69,8 +72,10 @@
               echo '<div class="slide">';
             }
             $sliderLoop->the_post();
-            echo get_the_post_thumbnail_url();
-            echo "<img src'".get_the_post_thumbnail_url()."'>";
+            $thumbnailId = get_post_thumbnail_id();
+            ?>
+            <img src="<?php echo wp_get_attachment_image_url( $thumbnailId, 'single-post-thumbnail'); ?>" alt="">
+            <?php
             echo "</div>";
             $slideCounter += 1;
           }
@@ -97,8 +102,10 @@
           $slideLabelCounter = 1;
           echo "<div class'navigation-manual'>";
           while($slideLabelCounter <= $count)
-          {
-            echo "<label for='radio".$slideLabelCounter."' class='manual-btn'>";
+          { ?>
+            <label for="radio<?php$slideLabelCounter?>" class="manual-btn"></label>
+
+            <?php
             echo "</label>";
             $slideLabelCounter += 1;
           }

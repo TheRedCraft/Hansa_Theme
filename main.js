@@ -17,7 +17,7 @@ function make_active(i) {
 
 function searchgrid() {
     const twitch_boxen = document.querySelectorAll(".twitch-boxen");
-    
+
     for(i = 0; i < twitch_boxen.length; i++) {
         twitch_boxen_count = twitch_boxen[i].childElementCount;
         let colls = Math.ceil(twitch_boxen_count / 4);
@@ -27,7 +27,7 @@ function searchgrid() {
         }
         twitch_boxen[i].style.gridTemplateRows = cssgrid;
     }
-  
+
 }
 
 function dislplayscrolled() {
