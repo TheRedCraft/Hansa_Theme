@@ -69,7 +69,8 @@
               echo '<div class="slide">';
             }
             $sliderLoop->the_post();
-            the_post_thumbnail();
+            echo get_the_post_thumbnail_url();
+            echo "<img src'".get_the_post_thumbnail_url()."'>";
             echo "</div>";
             $slideCounter += 1;
           }
