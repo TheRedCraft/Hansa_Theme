@@ -7,6 +7,7 @@
 $argsWichtig = array(
   'posts_per_page' => 1,
   'category_name' => 'wichtig'
+  'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
 $wichtigLoop = new WP_Query($argsWichtig);
@@ -37,6 +38,7 @@ $args = array(
   'post_status' => 'publish',
   'post_type' => 'post',
   'category_name' => 'news'
+  'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
 $loop = new WP_Query($args);
@@ -77,6 +79,7 @@ $args2 = array(
   'post_status' => 'publish',
   'post_type' => 'post',
   'category_name' => 'startseite',
+  'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
 $loop2 = new WP_Query($args2);

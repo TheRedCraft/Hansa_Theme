@@ -18,6 +18,7 @@ if(have_posts())
         echo "<div class='bottom-corner'></div>";
         echo "</div>";
         echo "</div>";
+
     }
     echo "</div>";
 }

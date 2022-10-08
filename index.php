@@ -1,12 +1,44 @@
 <?php get_header(); ?>
 
+<h2 class="section-heading">News</h2>
+
 <?php
+
+$argsWichtig = array(
+  'posts_per_page' => 1,
+  'category_name' => 'wichtig'
+  'category__not_in' => array(get_cat_ID('sliderImg')),
+);
+
+$wichtigLoop = new WP_Query($argsWichtig);
+
+if($wichtigLoop->have_posts())
+{
+  while($wichtigLoop -> have_posts())
+  {
+    $wichtigLoop->the_post();
+    echo "<div class'wichtig-box'>";
+    echo "<div class'wichtig-heading'>";
+    the_title();
+    echo "</div>";
+    echo "<div class'wichtig-content'>";
+    the_content();
+    echo "</div>";
+    echo "<div class'wichtig-thumbnail'>";
+    the_post_thumbnail();
+    echo "</div>";
+    echo "</div>";
+  }
+}
+
+wp_reset_postdata();
 
 $args = array(
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
   'category_name' => 'news'
+  'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
 $loop = new WP_Query($args);
@@ -35,6 +67,9 @@ if($loop->have_posts())
 
 ?>
 
+<h2 class="section-heading">Startseite</h2>
+
+
 <?php
 
 wp_reset_postdata();
@@ -44,6 +79,7 @@ $args2 = array(
   'post_status' => 'publish',
   'post_type' => 'post',
   'category_name' => 'startseite',
+  'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
 $loop2 = new WP_Query($args2);
