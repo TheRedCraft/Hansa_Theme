@@ -17,9 +17,9 @@ a {
 	color: black;
 }
 
-  $slider-height: 100vh;
-  $slider-prime: #3660E3;
-  .slider{
+$slider-height: 100vh;
+$slider-prime: #3660E3;
+.slider{
     width: 100vw;
     height: $slider-height; 
     overflow: hidden;
@@ -50,13 +50,6 @@ a {
 
 
 
-	  .navigation-manual{
-		position: absolute;
-		width: 100%;
-		bottom: 10px;
-		display: flex;
-		justify-content: center;
-	  }
 
 	  .manual-btn{
 		border: 2px solid $slider-prime;
@@ -94,6 +87,14 @@ a {
 
 	  .navigation-auto div:not(:last-child){
 		margin-right: 40px;
+	  }
+
+	  .navigation-manual{
+		position: absolute;
+		width: 100%;
+		bottom: 10px;
+		display: flex; 
+		justify-content: center;
 	  }
 
 

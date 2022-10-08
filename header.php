@@ -46,9 +46,7 @@
           $slideInputRadio = 1;
           while($slideInputRadio <= $count)
           {
-            ?>
-            <input type="radio" name="radio-btn" id="radio<?php$slideInputRadio?>" class="navigation_menu_slider" onclick="make_active(<?php$slideInputRadio?>)">
-            <?php
+            echo '<input type="radio" name="radio-btn" id="radio'.$slideInputRadio.'" class="navigation_menu_slider" onclick="make_active('.$slideInputRadio.')">';
             $slideInputRadio += 1;
           }
         }
@@ -74,7 +72,7 @@
             $sliderLoop->the_post();
             $thumbnailId = get_post_thumbnail_id();
             ?>
-            <img src="<?php echo wp_get_attachment_image_url( $thumbnailId, 'single-post-thumbnail'); ?>" alt="">
+            <img src="<?php echo wp_get_attachment_image_url( $thumbnailId, 'single-post-thumbnail'); ?>" alt="" id="SliderImage">
             <?php
             echo "</div>";
             $slideCounter += 1;
@@ -85,7 +83,7 @@
         if($count > 0)
         {
           $slideBtnCounter = 1;
-          echo "<div class'navigation-auto'>";
+          echo "<div class='navigation-auto'>";
           while($slideBtnCounter <= $count)
           {
             echo "<div class='auto-btn".$slideBtnCounter."'>";
@@ -100,12 +98,12 @@
         if($count > 0)
         {
           $slideLabelCounter = 1;
-          echo "<div class'navigation-manual'>";
+          echo '<div class="navigation-manual">';
           while($slideLabelCounter <= $count)
-          { ?>
-            <label for="radio<?php$slideLabelCounter?>" class="manual-btn"></label>
+          {
 
-            <?php
+            echo '<label for="radio'.$slideLabelCounter.'" class="manual-btn"></label>';
+
             echo "</label>";
             $slideLabelCounter += 1;
           }

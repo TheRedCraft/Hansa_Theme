@@ -1,14 +1,26 @@
 var counter = 1;
-document.getElementById('radio1').checked = true;
+max_bilder = document.querySelectorAll('#SliderImage').length;
+document.querySelector(".auto-btn" + counter).style.background = '#3660E3';
 setInterval(function(){
-  document.getElementById('radio' + counter).checked = true;
+  document.getElementById('radio' + counter).checked = "true";
   counter++;
-  if(counter > 8){
+  if(counter > max_bilder){
     counter = 1;
   }
-  document.querySelector('.first').style.marginLeft = -((counter - 1) * 20)
+  
+  document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
   name_dot = '.auto-btn' + counter;
+  name_previos_dot = '';
+  if(counter == max_bilder) {
+    name_previos_dot = '.auto-btn' + (counter - 1);
+  } else if(counter == 1) {
+    name_previos_dot = ".auto-btn" + max_bilder;
+  } else {
+    name_previos_dot = '.auto-btn' + (counter - 1);
+  }
+
   document.querySelector(name_dot).style.background = '#3660E3';
+  document.querySelector(name_previos_dot).style.background = 'transparent';
 }, 5000);
 
 function make_active(i) {
