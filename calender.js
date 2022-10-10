@@ -96,6 +96,7 @@ function makeCalender(dm = new Date().getMonth() + 1, dj = new Date().getFullYea
         for (var i = 0; i < 7; i++) {
           let cell = row.insertCell(i);
           cell.innerHTML = Days[i];
+          cell.classList.add('Wochentag')
         }
 
         let Daycount = 1;
@@ -115,7 +116,7 @@ function makeCalender(dm = new Date().getMonth() + 1, dj = new Date().getFullYea
                   addon = addon + "<span class'termin'>" + calenderData[k].desc + "</span>"
                 }
               }
-              cell.innerHTML = "<p>" + Daycount + "</p><br>" + addon;
+              cell.innerHTML = "<div class='cell'><p>" + Daycount + "</p><br>" + addon + "</div>";
               cell.className = 'kalendertag';
               
               console.log(Daycount, thisDay);

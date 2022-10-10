@@ -32,7 +32,7 @@ if(have_posts())
 
 if ($banana == 'true') {
   echo "<div class='calender-box'>";
-  echo "<div class'calender-buttons'>";
+  echo "<div class='calender-buttons'>";
   echo "<button onclick='beforeMonth()'>Vorheriger Monat</button>";
   echo "<button onclick='nextMonth()'>Nachvolgender Monat</button>";
   echo "</div>";

@@ -304,6 +304,36 @@ $clr-background: var(--clr-background);
 
 
 .calender-box {
+	.calender-buttons {
+		width: 80vw;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		button {
+			width: 48%;
+			background-color: rgba($color: #749d9d, $alpha: 1);
+			color: white;
+			border: 1px solid lightgray;
+			font-size: 30px;
+			transition: 0.25s;
+			border-radius: 10px;
+		}
+		button:first-child {
+			margin-right: 4%;
+		}
+		button:hover{
+			color: black;
+			background-color: rgba($color: #749d9d, $alpha: 0.8);
+		}
+	}
+	caption {
+		width: 80vw;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		background-color: rgba($color: #749d9d, $alpha: 1);
+		font-size: 30px;
+		color: white;
+		padding: 20px 0 20px 0;
+	}
 	width: 100%;
 	height: auto;
 	padding: 8vw;
@@ -312,18 +342,34 @@ $clr-background: var(--clr-background);
 		background: rgb(116,157,157);
 		background: linear-gradient(180deg, rgba(116,157,157,1) 35%, rgba(178,165,139,1) 100%);
 		border-radius: 10px;
+		.cell {
+			display: flex;
+			flex-direction: column;
+			padding: 2px;
+			margin: 10px;
+		}
+		.Wochentag {
+			font-size: 40px;
+			padding: 20px;
+		}
 		tbody tr td {
+			top: 0;
 			color: white;
-			justify-content: center;
-			align-items: center;
+			vertical-align: top;
 			p {
+				display: block;
+				width: 100%;
+				top: 0;
 				font-size: 30px;
 			}
 			span {
+				border-radius: 5px;
+				margin: 2px;
+				padding: 5px;
+				display: block;
 				font-size: 25px;
 				width: 100%;
 				background-color: lightblue;
-				border-radius: 5px;
 			}
 		}
 		.today {

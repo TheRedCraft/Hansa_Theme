@@ -258,25 +258,71 @@ a {
   height: auto;
   padding: 8vw;
 }
+.calender-box .calender-buttons {
+  width: 80vw;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.calender-box .calender-buttons button {
+  width: 48%;
+  background-color: #749d9d;
+  color: white;
+  border: 1px solid lightgray;
+  font-size: 30px;
+  transition: 0.25s;
+  border-radius: 10px;
+}
+.calender-box .calender-buttons button:first-child {
+  margin-right: 4%;
+}
+.calender-box .calender-buttons button:hover {
+  color: black;
+  background-color: rgba(116, 157, 157, 0.8);
+}
+.calender-box caption {
+  width: 80vw;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #749d9d;
+  font-size: 30px;
+  color: white;
+  padding: 20px 0 20px 0;
+}
 .calender-box table {
   width: 80vw;
   background: rgb(116, 157, 157);
   background: linear-gradient(180deg, rgb(116, 157, 157) 35%, rgb(178, 165, 139) 100%);
   border-radius: 10px;
 }
+.calender-box table .cell {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 10px;
+}
+.calender-box table .Wochentag {
+  font-size: 40px;
+  padding: 20px;
+}
 .calender-box table tbody tr td {
+  top: 0;
   color: white;
-  justify-content: center;
-  align-items: center;
+  vertical-align: top;
 }
 .calender-box table tbody tr td p {
+  display: block;
+  width: 100%;
+  top: 0;
   font-size: 30px;
 }
 .calender-box table tbody tr td span {
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+  display: block;
   font-size: 25px;
   width: 100%;
   background-color: lightblue;
-  border-radius: 5px;
 }
 .calender-box table .today {
   border: 1px solid white;
