@@ -1,3 +1,7 @@
+/*function alertText(text) {
+  alert(text)
+}*/
+
 var counter = 1;
 max_bilder = document.querySelectorAll('#SliderImage').length;
 document.querySelector(".auto-btn" + counter).style.background = '#3660E3';
@@ -7,7 +11,7 @@ setInterval(function(){
   if(counter > max_bilder){
     counter = 1;
   }
-  
+
   document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
   name_dot = '.auto-btn' + counter;
   name_previos_dot = '';

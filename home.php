@@ -4,9 +4,21 @@
 
 <?php
 
+/* Test */
+
+/*$fh = fopen('calenderimgparsed.txt','r');
+while($line = fgets($fh)) {
+  echo "<script>alertText("$line")</scipt>";
+}
+fclose($fh);*/
+
+
+
+
+
 $argsWichtig = array(
   'posts_per_page' => 1,
-  'category_name' => 'wichtig'
+  'category_name' => 'wichtig',
   'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
@@ -37,7 +49,7 @@ $args = array(
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
-  'category_name' => 'news'
+  'category_name' => 'news',
   'category__not_in' => array(get_cat_ID('sliderImg')),
 );
 
