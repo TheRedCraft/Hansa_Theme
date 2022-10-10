@@ -3,6 +3,7 @@
 <?php
 
 $falafel;
+$banana;
 
 if(have_posts())
 {
@@ -15,6 +16,11 @@ if(have_posts())
       else {
         $falafel = 'false';
       }
+      if(get_the_title() == 'Termine') {
+        $banana = 'true';
+      } else {
+        $banana = 'false';
+      }
         echo "<div class='single-post'>";
         the_title('<h2 class"single-post-heading>', '</h2>');
         echo "<div class='single-post-content'>";
@@ -24,6 +30,27 @@ if(have_posts())
     }
 }
 
+if ($banana == 'true') {
+  echo "<div class='calender-box'>";
+  echo "<div class'calender-buttons'>";
+  echo "<button onclick='beforeMonth()'>Vorheriger Monat</button>";
+  echo "<button onclick='nextMonth()'>Nachvolgender Monat</button>";
+  echo "</div>";
+  echo "<table id='kalender'></table>";
+  echo "</div>";
+  echo "<script src='/wordpress/wp-content/themes/Hansa_Theme/calender.js'></script>";
+  $file = fopen("http://localhost/wordpress/wp-content/themes/Hansa_Theme/calenderimgparsed.txt","r");
+
+  while(! feof($file))
+    {
+      $line = trim(fgets($file));
+      echo '<script>addToCalender(`'.$line.'`)</script>';
+    }
+
+  fclose($file);
+
+  echo "<script>makeCalenderData();makeCalender(4,2015);</script>";
+}
 
 if ($falafel == 'true')
   {

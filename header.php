@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
 <body onload="searchgrid()">
@@ -15,9 +18,11 @@
 <nav>
     <?php
         echo '<div class="first_nav">';
+        echo '<div class="sec-center"><input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/><label class="for-dropdown" for="dropdown">Dropdown Menu <i class="uil uil-arrow-down"></i></label>';
         wp_nav_menu(array(
             'theme_location' => 'header-menu',
         ));
+        echo "</div>";
         echo "</div>";
       echo "</div>"
     ?>

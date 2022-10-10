@@ -3,11 +3,15 @@ Theme Name: Hansa-Theme
 Author: Moritz und Julius
 */
 /*Anfang Slider*/
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow-x: hidden;
+  width: 100vw;
   background-color: #ffffff;
 }
 
@@ -143,8 +147,6 @@ a {
 }
 
 .twitch-boxen {
-  margin-left: 10vh;
-  margin-right: 10vh;
   margin-top: 10vh;
   display: grid;
   grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
@@ -242,4 +244,41 @@ a {
 
 .first_nav a, li {
   color: var(--clr-prime);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+
+.calender-box {
+  width: 100%;
+  height: auto;
+  padding: 8vw;
+}
+.calender-box table {
+  width: 80vw;
+  background: rgb(116, 157, 157);
+  background: linear-gradient(180deg, rgb(116, 157, 157) 35%, rgb(178, 165, 139) 100%);
+  border-radius: 10px;
+}
+.calender-box table tbody tr td {
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.calender-box table tbody tr td p {
+  font-size: 30px;
+}
+.calender-box table tbody tr td span {
+  font-size: 25px;
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+.calender-box table .today {
+  border: 1px solid white;
+  border-radius: 100px;
+}/*# sourceMappi
