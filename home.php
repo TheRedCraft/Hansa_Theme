@@ -1,19 +1,9 @@
 <?php get_header(); ?>
 
 <h2 class="section-heading">News</h2>
-
 <?php
 
 /* Test */
-
-/*$fh = fopen('calenderimgparsed.txt','r');
-while($line = fgets($fh)) {
-  echo "<script>alertText("$line")</scipt>";
-}
-fclose($fh);*/
-
-
-
 
 
 $argsWichtig = array(

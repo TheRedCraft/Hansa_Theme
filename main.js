@@ -1,5 +1,10 @@
-/*function alertText(text) {
-  alert(text)
+/*calender = []
+
+function addToCalender(line) {
+  calender.push(line)
+}
+function alertCalender() {
+  makeCalender(calender)
 }*/
 
 var counter = 1;

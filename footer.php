@@ -6,5 +6,19 @@
 </div>
 <div class="copyright-bar"><p>Copyright 2022</p> </div>
 <script src="/wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
+<?php
+/*
+$file = fopen("http://localhost/wordpress/wp-content/themes/Hansa_Theme/calenderimgparsed.txt","r");
+
+while(! feof($file))
+  {
+    $line = trim(fgets($file));
+    echo "<script>addToCalender('".$line."')</script>";
+  }
+
+fclose($file);
+
+echo "<script>alertCalender()</script>";*/
+?>
 </body>
 </html>
