@@ -34,7 +34,7 @@ if ($banana == 'true') {
   echo "<div class='calender-box'>";
   echo "<div class='calender-buttons'>";
   echo "<button onclick='beforeMonth()'>Vorheriger Monat</button>";
-  echo "<button onclick='nextMonth()'>Nachvolgender Monat</button>";
+  echo "<button onclick='nextMonth()'>Nachfolgender Monat</button>";
   echo "</div>";
   echo "<table id='kalender'></table>";
   echo "</div>";
@@ -59,7 +59,7 @@ if ($falafel == 'true')
       'post_per_page' => 100,
       'category_name' => 'oberstufe'
     );
-    
+
     $loop = new WP_Query($args);
 
     if($loop->have_posts())
