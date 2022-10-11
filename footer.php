@@ -17,7 +17,7 @@ while(! feof($file))
 
 fclose($file);
 
-Test Hallo! Test change! Noch mehr anderes
+Test Hallo! Test change!
 
 echo "<script>alertCalender()</script>";*/
 ?>
