@@ -367,13 +367,55 @@ $clr-background: var(--clr-background);
 				padding: 5px;
 				display: block;
 				font-size: 25px;
-				width: 100%;
+				max-width: 100%;
 				background-color: lightblue;
+				word-break: break-all;
 			}
 		}
 		.today {
 			border: 1px solid white;
 			border-radius: 100px;
+		}
+	}
+}
+.single-post {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.single-post-content {
+	width: 80vw;
+}
+.single-post-heading {
+	width: 80vw;
+	font-size: 50px;
+	text-decoration: none;
+}
+.wp-block-cover__background {
+	border-radius: 20px;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+.wp-block-cover__inner-container {
+	padding: 30px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.wp-block-gallerie {
+	border-radius: 20px 20px 20px 20px;
+}
+.wp-block-cover table {
+	tr {
+		border-bottom: 1px solid lightgray;
+		&:last-child {
+			border: none;
+		}
+	}
+	td{
+		border-right: 1px solid lightgray;
+		padding: 10px;
+		&:last-child {
+			border: none;
 		}
 	}
 }

@@ -22,7 +22,7 @@ if(have_posts())
         $banana = 'false';
       }
         echo "<div class='single-post'>";
-        the_title('<h2 class"single-post-heading>', '</h2>');
+        the_title('<h2 class="single-post-heading">', '</h2>');
         echo "<div class='single-post-content'>";
           the_content();
         echo "</div>";
