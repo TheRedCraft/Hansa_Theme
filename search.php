@@ -20,6 +20,7 @@ $search_args = array(
     while($search_loop->have_posts())
     {
       $search_loop->the_post();
+      echo "<a href='".get_the_permalink()."'>";
       echo "<div class='twitch-box'>";
       echo "<div class='content'>";
       the_post_thumbnail();
@@ -30,6 +31,7 @@ $search_args = array(
       echo "<div class='bottom-corner'></div>";
       echo "</div>";
       echo "</div>";
+      echo "</a>";
     }
     echo "</div>";
   } else {

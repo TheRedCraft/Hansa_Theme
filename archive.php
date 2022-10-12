@@ -7,6 +7,7 @@ if(have_posts())
     echo "<div class='twitch-boxen'>";
     while(have_posts())
     {
+        echo "<a href='".get_the_permalink()."'>";
         the_post();
         echo "<div class='twitch-box'>";
         echo "<div class='content'>";
@@ -18,6 +19,7 @@ if(have_posts())
         echo "<div class='bottom-corner'></div>";
         echo "</div>";
         echo "</div>";
+        echo "</a>";
 
     }
     echo "</div>";
