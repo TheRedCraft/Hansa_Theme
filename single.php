@@ -5,15 +5,13 @@
 $falafel;
 $banana;
 
-echo "<div class='single-post-thumbnail-div'>";
 
 if(have_posts())
 {
     while(have_posts())
     {
       the_post();
-      the_post_thumbnail();
-      echo "</div>";
+      echo "<div class='single-post-thumbnail-div' style='background-image: url(".get_the_post_thumbnail_url().")'></div>";
       if(get_the_title() == 'oberstufe'){
         $falafel = 'true';
       }

@@ -450,3 +450,12 @@ $clr-background: var(--clr-background);
 		line-height: 30px;
 	}
 }
+.single-post-thumbnail-div {
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	img {
+		height: 50vh;
+	}
+}

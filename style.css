@@ -403,4 +403,13 @@ a {
     font-size: 20px;
     line-height: 30px;
   }
+}
+.single-post-thumbnail-div {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.single-post-thumbnail-div img {
+  height: 50vh;
 }/*# sourceMappingURL=style.css.map */

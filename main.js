@@ -9,16 +9,18 @@ function alertCalender() {
 
 var counter = 1;
 max_bilder = document.querySelectorAll('#SliderImage').length;
-document.querySelector(".auto-btn" + counter).style.background = '#3660E3';
-setInterval(function(){
-  document.getElementById('radio' + counter).checked = "true";
-  counter++;
-  if(counter > max_bilder){
-    counter = 1;
-  }
+try {
 
-  document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
-  name_dot = '.auto-btn' + counter;
+  document.querySelector(".auto-btn" + counter).style.background = '#3660E3';
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = "true";
+    counter++;
+    if(counter > max_bilder){
+      counter = 1;
+    }
+    
+    document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
+    name_dot = '.auto-btn' + counter;
   name_previos_dot = '';
   if(counter == max_bilder) {
     name_previos_dot = '.auto-btn' + (counter - 1);
@@ -27,13 +29,16 @@ setInterval(function(){
   } else {
     name_previos_dot = '.auto-btn' + (counter - 1);
   }
-
+  
   document.querySelector(name_dot).style.background = '#3660E3';
   document.querySelector(name_previos_dot).style.background = 'transparent';
 }, 5000);
 
 function make_active(i) {
-    counter = i;
+  counter = i;
+}
+} catch (error) {
+  console.log(error)
 }
 
 function searchgrid() {
@@ -52,6 +57,7 @@ function searchgrid() {
 }
 
 function dislplayscrolled() {
+    console.log(window.scrollY);
     if(window.scrollY > 2) {
         document.querySelector('.first_menu').style.transition = '1s';
     }
