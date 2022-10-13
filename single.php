@@ -12,7 +12,7 @@ if(have_posts())
     {
       the_post();
       echo "<div class='single-post-thumbnail-div' style='background-image: url(".get_the_post_thumbnail_url().")'></div>";
-      if(get_the_title() == 'oberstufe'){
+      if(get_the_title() == 'Oberstufe'){
         $falafel = 'true';
       }
       else {
@@ -63,7 +63,8 @@ if ($falafel == 'true')
     wp_reset_postdata();
     $args = array(
       'post_per_page' => 100,
-      'category_name' => 'oberstufe'
+      'category_name' => 'oberstufe',
+      'order' => 'ASC',
     );
 
     $loop = new WP_Query($args);
