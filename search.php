@@ -9,7 +9,8 @@ $search_args = array(
     'post_status' => 'publish',
     'posts_per_page' => 800,
     'category__not_in' => array(get_cat_ID('sliderImg')),
-    's' => $keyword
+    's' => $keyword,
+    'order_by' => 'relevance'
   );
 
   $search_loop = new WP_Query($search_args);
