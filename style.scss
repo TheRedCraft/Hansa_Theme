@@ -429,6 +429,8 @@ $clr-background: var(--clr-background);
 }
 .search-form {
 	.text-input {
+		font-size: 26px;
+		height: 40px;
 		border: 1px solid white;
 		background-color: rgba($color: #000000, $alpha: 0);
 		border-radius: 100px;
@@ -436,10 +438,13 @@ $clr-background: var(--clr-background);
 		padding-left: 10px;
 	}
 	.submit-button {
+		font-size: 26px;
+		height: 40px;
 		border: 1px solid white;
 		border-radius: 100px;
 		color: white;
 		background-color: $prime;
+		padding: 0 10px;
 	}
 }
 
@@ -543,12 +548,12 @@ $clr-background: var(--clr-background);
 	}
 }
 .single-post-thumbnail-div {
-	height: 50vh;
+	height: 60vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 
 	background-size: cover;
 	img {
-		height: 50vh;
+		height: 60vh;
 	}
 }

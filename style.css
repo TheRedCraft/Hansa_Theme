@@ -386,6 +386,8 @@ a {
 }
 
 .search-form .text-input {
+  font-size: 26px;
+  height: 40px;
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 100px;
@@ -393,10 +395,13 @@ a {
   padding-left: 10px;
 }
 .search-form .submit-button {
+  font-size: 26px;
+  height: 40px;
   border: 1px solid white;
   border-radius: 100px;
   color: white;
   background-color: #143e97;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 850px) {
@@ -486,12 +491,12 @@ a {
   }
 }
 .single-post-thumbnail-div {
-  height: 50vh;
+  height: 60vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 .single-post-thumbnail-div img {
-  height: 50vh;
+  height: 60vh;
 }/*# sourceMappingURL=style.css.map */
