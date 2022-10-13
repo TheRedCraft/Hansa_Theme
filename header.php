@@ -28,7 +28,7 @@
     ?>
 </nav>
 
-
+<?php if (is_front_page()) { ?>
 <div class="slider">
       <div class="slides">
 
@@ -120,3 +120,4 @@
         ?>
 
     </div>
+  <?php }?>
