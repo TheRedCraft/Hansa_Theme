@@ -82,7 +82,8 @@ a {
 /*Anfang Twitch Box*/
 .twitch-box {
   width: 20vw;
-  height: 25vw;
+  min-height: 30vw;
+  height: auto;
   position: relative;
 }
 .twitch-box .content {
@@ -95,6 +96,9 @@ a {
   height: 100%;
   background-color: white;
   transition: all 200ms;
+}
+.twitch-box .content .twitch-head {
+  padding: 0 5% 0 5%;
 }
 .twitch-box .twitch-border-effect {
   position: absolute;
@@ -149,6 +153,7 @@ a {
 }
 
 .twitch-boxen {
+  padding: 0 5vw 0 5vw;
   margin-top: 10vh;
   display: grid;
   grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
