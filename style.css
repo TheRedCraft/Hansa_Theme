@@ -410,8 +410,8 @@ a {
 
 .twitch-box-wichtig {
   width: 90vw;
-  min-height: 50vw;
-  height: auto;
+  min-height: 50vh;
+  height: 50vw;
   overflow: hidden;
   position: relative;
   margin-bottom: 10vh;
