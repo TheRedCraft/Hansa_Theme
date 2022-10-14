@@ -1,0 +1,5 @@
+1. wichtig Box
+2. Menu Leiste auf archive.php und search.php
+3. warscheinlich auch 404.php
+4. Menu responsive
+5. Footer menu
