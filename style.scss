@@ -740,3 +740,58 @@ $clr-background: var(--clr-background);
 		height: 60vh;
 	}
 }
+
+nav {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	color: white;
+	padding: 0;
+	li .sub-menu {
+		display: none;
+	}
+	.menu-item-has-children:hover .sub-menu {
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: white;
+		border: 1px solid lightgray;
+		a {
+			color: $prime;
+		}
+	}
+	.menu-header-menu-container {
+		height: 100%;
+		margin: 0;
+	}
+	ul {
+		list-style-type: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		li {
+			display: block;
+			padding: .25rem 1rem;
+			font-size: 20px;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			a {
+				height: 100%;
+				text-align: center;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		color: white;
+	}
+
+}
