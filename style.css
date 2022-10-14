@@ -242,7 +242,7 @@ a {
 
 .first_search {
   position: absolute;
-  right: 0;
+  right: 30px;
 }
 
 .first_nav {
@@ -491,6 +491,17 @@ a {
 }
 
 @media screen and (max-width: 850px) {
+  .first_search {
+    display: none;
+  }
+  nav {
+    left: 120px;
+    overflow-x: scroll;
+    min-width: 280px;
+  }
+  nav ul:first-child {
+    margin-left: 0px;
+  }
   .single-post-content {
     width: 90vw;
   }
