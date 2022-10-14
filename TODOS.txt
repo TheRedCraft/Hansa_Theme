@@ -3,3 +3,4 @@
 3. warscheinlich auch 404.php
 4. Menu responsive
 5. Footer menu
+6. Slider Buttons
