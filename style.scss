@@ -267,6 +267,7 @@ $clr-background: var(--clr-background);
 
 .first_menu { 
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	height: 10vh;
 	width: 100vw;
@@ -287,7 +288,7 @@ $clr-background: var(--clr-background);
 }
 .first_search {
 	position: absolute; 
-	right: 12vw;
+	right: 0;
 }
 .first_nav {
  	position: absolute;
@@ -743,31 +744,16 @@ $clr-background: var(--clr-background);
 
 nav {
 	height: 100%;
-	position: absolute;
 	right: 0;
+	position: absolute;
+	right: 35vw;
 	color: white;
 	padding: 0;
+	z-index: 99;
 	li .sub-menu {
 		display: none;
 	}
-	.menu-item-has-children:hover .sub-menu {
-		display: block;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		background-color: white;
-		border: 1px solid lightgray;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		width: 200px;
-		a {
-			color: $prime;
-			padding: .25rem;
-			text-align: center;
-			display: block;
-		}
-	}
+	
 	.menu-header-menu-container {
 		height: 100%;
 		margin: 0;
@@ -780,6 +766,7 @@ nav {
 		height: 100%;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 		li {
 			display: block;
 			padding: .25rem 1rem;
@@ -800,5 +787,41 @@ nav {
 		}
 		color: white;
 	}
+	.sub-menu li .sub-menu {
+		left: 100%;
+		top: 0;
+	}
 
+}
+
+nav ul > .menu-item-has-children:hover > .sub-menu {
+	display: block;
+	height: auto;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: white;
+	border: 1px solid lightgray;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 200px;
+	border-radius: 10px;
+	z-index: 999;
+	a {
+		color: black;
+		padding: .25rem;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+		&:hover {
+			color: $prime;
+		}
+	}
+}
+
+nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu{
+	display: block;
+	left: 100%;
+	top: 0;
 }

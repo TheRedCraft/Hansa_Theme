@@ -10,9 +10,7 @@
     <?php
       echo "<div class='first_menu'>";
       echo "<img src='/wordpress/wp-content/uploads/2022/10/logo.png'>";
-      echo "<div class='first_search'>";
-      get_search_form();
-      echo "</div>";
+
     ?>
 
             <nav>
@@ -26,6 +24,13 @@
 
                 ?>
             </nav>
+            <?php 
+            
+            echo "<div class='first_search'>";
+            get_search_form();
+            echo "</div>";
+            
+            ?>
           </div>
 
 
