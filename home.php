@@ -15,7 +15,7 @@ $wichtigLoop = new WP_Query($argsWichtig);
 
 if($wichtigLoop->have_posts())
 {
-  echo "<div class='twitch-boxen'>";
+  echo "<div class='twitch-boxen twitch-boxen-wichtig'>";
   while($wichtigLoop -> have_posts())
   {
     $wichtigLoop->the_post();

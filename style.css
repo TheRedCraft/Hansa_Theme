@@ -404,9 +404,15 @@ a {
   padding: 0 10px;
 }
 
+.twitch-boxen-wichtig {
+  margin-bottom: 25vw;
+}
+
 .twitch-box-wichtig {
   width: 90vw;
-  height: 30vw;
+  min-height: 50vw;
+  height: auto;
+  overflow: hidden;
   position: relative;
   margin-bottom: 10vh;
 }
@@ -591,6 +597,9 @@ a {
     display: hidden;
     margin: 10vh;
     overflow-y: scroll;
+  }
+  .twitch-box-wichtig .content .wichtig-col1 {
+    font-size: 15px;
   }
   .twitch-box-wichtig .twitch-border-effect {
     position: absolute;

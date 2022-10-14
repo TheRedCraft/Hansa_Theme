@@ -447,11 +447,16 @@ $clr-background: var(--clr-background);
 		padding: 0 10px;
 	}
 }
+.twitch-boxen-wichtig {
+	margin-bottom: 25vw;
+}
 .twitch-box-wichtig {
-	$twitch-height: 30vw;
+	$twitch-height: 50vw;
 	$twitch-width: 90vw;
 	width: $twitch-width;
-	height: $twitch-height;
+	min-height: 100vh;
+	height: $twitch-heigh;
+	overflow: hidden;
 	position: relative;
 	margin-bottom: 10vh;
 
@@ -657,6 +662,9 @@ $clr-background: var(--clr-background);
 				display: hidden;
 				margin: 10vh;
 				overflow-y: scroll;
+			}
+			.wichtig-col1 {
+				font-size: 15px;
 			}
 		}
 		.twitch-border-effect {
