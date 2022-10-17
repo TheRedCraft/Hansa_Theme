@@ -57,7 +57,6 @@ function searchgrid() {
 }
 
 function dislplayscrolled() {
-    console.log(window.scrollY);
     if(window.scrollY > 2) {
         document.querySelector('.first_menu').style.transition = '1s';
     }
@@ -70,3 +69,5 @@ function dislplayscrolled() {
 
 setTimeout(function() { document.querySelector('.first_menu').dataset.theme = "weg"; }, 1 );
 window.addEventListener("scroll", dislplayscrolled, false);
+
+let wichtig_box_height = document.querySelector('')

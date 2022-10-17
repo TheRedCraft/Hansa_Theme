@@ -2,6 +2,11 @@
 Theme Name: Hansa-Theme
 Author: Moritz und Julius
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 /*Anfang Slider*/
 html, body {
   overflow-x: hidden;
@@ -76,6 +81,7 @@ a {
   bottom: 10px;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 
 /*Ende Image Slider*/
@@ -406,16 +412,15 @@ a {
 }
 
 .twitch-boxen-wichtig {
-  margin-bottom: 25vw;
+  margin-bottom: 20vh;
 }
 
 .twitch-box-wichtig {
   width: 90vw;
   min-height: 50vh;
-  height: 50vw;
+  height: 60vh;
   overflow: hidden;
   position: relative;
-  margin-bottom: 10vh;
 }
 .twitch-box-wichtig .content {
   padding: 20px;
@@ -432,7 +437,7 @@ a {
   flex-direction: row;
 }
 .twitch-box-wichtig .content .wichtig-col2 {
-  margin: 10vh;
+  margin-left: 10vh;
   overflow-y: scroll;
 }
 .twitch-box-wichtig .content .wichtig-col1 {
@@ -488,6 +493,24 @@ a {
   width: 20vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.footer {
+  grid-template-columns: 30vw 70vw;
+}
+.footer .footer-menu-footer-div {
+  height: 100%;
+  width: 30vw;
+}
+.footer .footer-map-footer-div {
+  padding: 20px 20px 20px 30vw;
+  width: 70vw;
+  height: 40vh;
+  height: 100%;
+}
+.footer .footer-map-footer-div iframe {
+  margin: 20px;
+  width: 35vw;
 }
 
 @media screen and (max-width: 850px) {

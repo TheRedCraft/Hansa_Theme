@@ -1,6 +1,5 @@
 1. wichtig Box
-2. Menu Leiste auf archive.php und search.php
-3. warscheinlich auch 404.php
+2. Menu Leiste auf archive.php, 404.php und search.php
 4. Menu responsive
 5. Footer menu
 6. Slider Buttons

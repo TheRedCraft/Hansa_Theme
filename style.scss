@@ -4,6 +4,14 @@ Author: Moritz und Julius
 */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+
 /*Anfang Slider*/
 html, body {
 	overflow-x: hidden;
@@ -13,6 +21,7 @@ body{
     padding: 0;
 	background-color: #ffffff;
   }
+
 
 a {
 	color: black;
@@ -97,6 +106,7 @@ $slider-prime: #3660E3;
 		bottom: 10px;
 		display: flex; 
 		justify-content: center;
+		z-index: 1000;
 	  }
 
 
@@ -449,17 +459,17 @@ $clr-background: var(--clr-background);
 	}
 }
 .twitch-boxen-wichtig {
-	margin-bottom: 25vw;
+	margin-bottom: 20vh;
 }
 .twitch-box-wichtig {
-	$twitch-height: 50vw;
-	$twitch-width: 90vw;
-	width: $twitch-width;
+	$twitch-height-2: 60vh;
+	$twitch-width-2: 90vw;
+	width: $twitch-width-2;
 	min-height: 50vh;
-	height: $twitch-height;
+	height: $twitch-height-2;
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 10vh;
+
 
 	.content {
 		padding: 20px;
@@ -475,7 +485,7 @@ $clr-background: var(--clr-background);
 		display: flex;
 		flex-direction: row;
 		.wichtig-col2 {
-			margin: 10vh;
+			margin-left: 10vh;
 			overflow-y: scroll;
 		}
 		.wichtig-col1 {
@@ -538,6 +548,23 @@ $clr-background: var(--clr-background);
 			height: $twitch-width;
 			width: $twitch-width;
 			object-fit: cover;
+		}
+	}
+}
+.footer {
+	grid-template-columns: 30vw 70vw;
+	.footer-menu-footer-div {
+		height: 100%;
+		width: 30vw;
+	}
+	.footer-map-footer-div {
+		padding: 20px 20px 20px 30vw;
+		width: 70vw;
+		height: 40vh;
+		height: 100%;
+		iframe {
+			margin: 20px;
+			width: 35vw;
 		}
 	}
 }
@@ -838,3 +865,4 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 	left: 100%;
 	top: 0;
 }
+
