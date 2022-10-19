@@ -9,36 +9,22 @@ function alertCalender() {
 
 var counter = 1;
 max_bilder = document.querySelectorAll('#SliderImage').length;
-try {
-
-  document.querySelector(".auto-btn" + counter).style.background = '#3660E3';
-  setInterval(function(){
-    document.getElementById('radio' + counter).checked = "true";
+function SetupImageSlider() {
+  var last_dot = '';
+  setInterval(function() {
+    last_dot = document.querySelector('auto-btn' + counter);
     counter++;
-    if(counter > max_bilder){
-      counter = 1;
+    for(i = 0; i < max_bilder; i++) {
+      document.querySelector('auto-btn' + i).style.background = 'transparent';
     }
-    
-    document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
-    name_dot = '.auto-btn' + counter;
-  name_previos_dot = '';
-  if(counter == max_bilder) {
-    name_previos_dot = '.auto-btn' + (counter - 1);
-  } else if(counter == 1) {
-    name_previos_dot = ".auto-btn" + max_bilder;
-  } else {
-    name_previos_dot = '.auto-btn' + (counter - 1);
-  }
-  
-  document.querySelector(name_dot).style.background = '#3660E3';
-  document.querySelector(name_previos_dot).style.background = 'transparent';
-}, 5000);
+    document.querySelector('auto-btn' + counter).style.background = '#3660E3';
+  }, 5000)
+}
+
+SetupImageSlider()
 
 function make_active(i) {
   counter = i;
-}
-} catch (error) {
-  console.log(error)
 }
 
 function searchgrid() {
