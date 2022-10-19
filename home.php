@@ -3,7 +3,7 @@
 <?php
 
 /* Test */
-
+echo "<div class='main-content'>";
 
 $argsWichtig = array(
   'posts_per_page' => 1,
@@ -117,6 +117,6 @@ if($loop2->have_posts())
   }
   echo "</div>";
 }
-
+echo "</div>";
 ?>
 <?php get_footer(); ?>

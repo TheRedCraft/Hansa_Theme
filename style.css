@@ -81,7 +81,7 @@ a {
   bottom: 10px;
   display: flex;
   justify-content: center;
-  z-index: 1000;
+  z-index: 0;
 }
 
 /*Ende Image Slider*/
@@ -169,9 +169,10 @@ a {
 /*Ende Twitch Box*/
 /*Footer Anfang*/
 .section-heading {
-  display: block;
+  position: relative;
   font-size: 60px;
   margin-left: 10vh;
+  margin-top: 20vh;
 }
 
 .footer {
@@ -419,7 +420,6 @@ a {
   width: 90vw;
   min-height: 50vh;
   height: 60vh;
-  overflow: hidden;
   position: relative;
 }
 .twitch-box-wichtig .content {
@@ -511,6 +511,11 @@ a {
 .footer .footer-map-footer-div iframe {
   margin: 20px;
   width: 35vw;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 850px) {
