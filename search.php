@@ -14,7 +14,8 @@ $search_args = array(
   );
 
   $search_loop = new WP_Query($search_args);
-
+  
+  echo "<div style=' margin-left: 5vw; height: 20vh; width: 100%;'></div>";
   if( $search_loop->have_posts())
   {
     echo "<div class='twitch-boxen'>";

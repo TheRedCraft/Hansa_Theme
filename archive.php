@@ -4,6 +4,7 @@
 
 if(have_posts())
 {
+    echo "<div style=' margin-left: 5vw; height: 20vh; width: 100%;'></div>";
     echo "<div class='twitch-boxen'>";
     while(have_posts())
     {
