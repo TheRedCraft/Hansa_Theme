@@ -11,20 +11,49 @@ var counter = 1;
 max_bilder = document.querySelectorAll('#SliderImage').length;
 function SetupImageSlider() {
   var last_dot = '';
+  document.querySelector('.auto-btn' + counter).style.background = '#3660E3';
+
   setInterval(function() {
-    last_dot = document.querySelector('auto-btn' + counter);
+    last_dot = document.querySelector('.auto-btn' + counter);
     counter++;
-    for(i = 0; i < max_bilder; i++) {
-      document.querySelector('auto-btn' + i).style.background = 'transparent';
+
+    if(counter > max_bilder){
+      counter = 1;
     }
-    document.querySelector('auto-btn' + counter).style.background = '#3660E3';
-  }, 5000)
+
+    for(i = 1; i < max_bilder + 1; i++) {
+      document.querySelector('.auto-btn' + i).style.background = 'transparent';
+    }
+
+    document.querySelector('.auto-btn' + counter).style.background = '#3660E3';
+    document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
+  }, 10000)
 }
 
 SetupImageSlider()
 
 function make_active(i) {
-  counter = i;
+  switch(i) {
+    case 1:
+      counter = max_bilder;
+      break
+    default:
+      counter = i - 1;
+  }
+
+  last_dot = document.querySelector('.auto-btn' + counter);
+    counter++;
+
+    if(counter > max_bilder){
+      counter = 1;
+    }
+
+    for(i = 1; i < max_bilder + 1; i++) {
+      document.querySelector('.auto-btn' + i).style.background = 'transparent';
+    }
+
+    document.querySelector('.auto-btn' + counter).style.background = '#3660E3';
+    document.querySelector('.first').style.marginLeft = -((counter - 1) * 20) + "%"
 }
 
 function searchgrid() {
@@ -56,4 +85,3 @@ function dislplayscrolled() {
 setTimeout(function() { document.querySelector('.first_menu').dataset.theme = "weg"; }, 1 );
 window.addEventListener("scroll", dislplayscrolled, false);
 
-let wichtig_box_height = document.querySelector('')
