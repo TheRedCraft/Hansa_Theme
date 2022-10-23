@@ -418,7 +418,6 @@ a {
 
 .twitch-box-wichtig {
   width: 90vw;
-  min-height: 50vh;
   height: 60vh;
   position: relative;
 }
@@ -444,6 +443,7 @@ a {
   font-size: 30px;
 }
 .twitch-box-wichtig .twitch-border-effect {
+  padding: 20px;
   position: absolute;
   top: 0;
   left: 0;
