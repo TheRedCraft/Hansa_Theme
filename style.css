@@ -401,6 +401,7 @@ a {
   border-radius: 100px;
   color: white;
   padding-left: 10px;
+  width: 300px;
 }
 .search-form .submit-button {
   font-size: 26px;

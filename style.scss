@@ -11,7 +11,6 @@ Author: Moritz und Julius
 	font-family: 'Poppins', sans-serif;
 }
 
-
 /*Anfang Slider*/
 html, body {
 	overflow-x: hidden;
@@ -448,6 +447,7 @@ $clr-background: var(--clr-background);
 		border-radius: 100px;
 		color: white;
 		padding-left: 10px;
+		width: 300px;
 	}
 	.submit-button {
 		font-size: 26px;
