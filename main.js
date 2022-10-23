@@ -7,7 +7,6 @@ function alertCalender() {
   makeCalender(calender)
 }*/
 
-document.querySelector('.submit-button').innerHTML = 'Suchen';
 
 var counter = 1;
 max_bilder = document.querySelectorAll('#SliderImage').length;
