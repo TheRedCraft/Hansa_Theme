@@ -25,6 +25,11 @@
 
                 ?>
             </nav>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
             <?php 
             
             echo "<div class='first_search'>";
@@ -33,7 +38,6 @@
             
             ?>
           </div>
-
 
 <?php if (is_front_page()) { ?>
 <div class="slider">
