@@ -944,7 +944,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 }
 
 
-@media (hover:none) {
+@media screen and (max-width: 900px) {
 	.first_menu {
 		display: flex;
 		flex-direction: row;
