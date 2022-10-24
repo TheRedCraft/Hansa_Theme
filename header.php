@@ -10,7 +10,7 @@
     <?php
       echo "<div class='first_menu'>";
       echo "<div class='hansa-icon-div'>";
-      echo "<a href='/wordpress/'><img style='object-fit: cover;' src='http://wp.hansa-gymnasium.de/wp-content/uploads/2022/09/cropped-Hansa-Logo-Transparent-Weiss-4-768x447.png'></a>";
+      echo "<a href='/'><img style='object-fit: cover;' src='http://wp.hansa-gymnasium.de/wp-content/uploads/2022/09/cropped-Hansa-Logo-Transparent-Weiss-4-768x447.png'></a>";
       echo "</div>";
     ?>
 
