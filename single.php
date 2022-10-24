@@ -46,7 +46,7 @@ if ($banana == 'true') {
   echo "</div>";
   echo "<script src='/wp-content/themes/Hansa_Theme/calender.js'></script>";
   echo "<script src='/wordpress/wp-content/themes/Hansa_Theme/calender.js'></script>";
-  $file = fopen("http://","r");
+  $file = fopen("http://localhost/wordpress/wp-content/themes/Hansa_Theme/calenderimgparsed.txt","r");
 
   while(! feof($file))
     {
