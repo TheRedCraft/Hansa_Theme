@@ -838,7 +838,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     font-size: 40px;
   }
 }
-@media (cursor: none), (cursor: coarse), (hover: none), screen and (max-width: 600px) {
+@media (hover: none) {
   .first_menu {
     display: flex;
     flex-direction: row;
