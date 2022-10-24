@@ -618,6 +618,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 .hansa-icon-div {
   position: absolute;
+  top: 0;
 }
 .hansa-icon-div a {
   padding: 0;
