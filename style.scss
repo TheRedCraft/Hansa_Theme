@@ -265,7 +265,7 @@ $twitch-height: 30vw;
 
 .first_menu {
 	--clr-prime: #ffffff;
-	--clr-background: #000000;
+	--clr-background: #2859C5;
 }
 
 .first_menu[data-theme='weg'] {
@@ -456,7 +456,7 @@ $clr-background: var(--clr-background);
 		border: 1px solid white;
 		border-radius: 100px;
 		color: white;
-		background-color: $prime;
+		background-color: #FCBE6E;
 		padding: 0 10px;
 	}
 }
@@ -702,7 +702,12 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 
 
-
+.footer-infos {
+	position: absolute;
+	width: 50vw;
+	left: 20px;
+	color: white;
+}
 
 
 
@@ -1024,14 +1029,14 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 		left: 10px;
 		text-align: left;
 	}
-	.show {
+	.sub-menu.show {
 		display: block;
+	}
+	.sub-menu.notshow {
+		display: none;
 	}
 	nav .sub-menu {
 		text-align: left;
 		padding-left: 20px;
-	}
-	.dontShow {
-		display: none;
 	}
 }

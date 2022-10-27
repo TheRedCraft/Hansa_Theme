@@ -17,12 +17,32 @@ if ("ontouchstart" in document.documentElement)
   });
 
   document.querySelectorAll('.menu-item').forEach(n => {
+    if(n.classList.contains('menu-item-has-childes') == false) {
     n.addEventListener('click', () =>  {
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
       navMenu.classList.add('notActive');
     })
+  }
   })
+
+  
+  let submenu_list = document.querySelectorAll('.sub-menu');
+  for(q = 0; q < submenu_list.length; q++) {
+    submenu_list[q].classList.add('notshow')
+  }
+
+  let has_childes = document.querySelectorAll('.menu-item-has-children');
+  for(i = 0; i < has_childes.length; i++) {
+    has_childes[i].addEventListener('click', function() {
+      let has_childes_child_nodes = this.querySelectorAll('.sub-menu')
+      for(e = 0; e < has_childes_child_nodes.length; e++) {
+        has_childes_child_nodes[e].classList.toggle('show');
+        has_childes_child_nodes[e].classList.toggle('notshow');
+        console.log('hi');
+      }
+    })
+  }
 }
 
 function changeVisible() {
@@ -34,20 +54,3 @@ function changeVisible() {
   }
 }
 
-/*menuItemHasChildren = document.querySelectorAll('.menu-item-has-children');
-
-//menuItemHasChildren.addEventListener('click', fucntion () {
-//  child davon soll visable werden und dieses element soll darunter auch angezeigt werden
-//})
-
-for (i = 0; i < menuItemHasChildren.length; i++) {
-  console.log('hi');
-  menuItemHasChildren[i].childNodes.childNodes.classList.add('dontShow');
-  menuItemHasChildren[i].childNodes.childNodes.style.display = 'none';
-    menuItemHasChildren[i].addEventListener('click', function (event) {
-      event.preventDefault();
-      menuItemHasChildren[i].childNodes.childNodes.classList.toggle('show');
-      menuItemHasChildren[i].childNodes.childNodes.classList.toggle('dontShow');
-    })
-}
-*/

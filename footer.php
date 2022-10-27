@@ -5,6 +5,18 @@
     'theme_location' => 'footer-menu'
   ) ) ?>
   </div>
+  <div class="footer-infos"> 
+    <p>
+    Hansa-Gymnasium Bergedorf
+    <br>
+    Hermann-Distel-Str. 25
+    <br>
+    21029 Hamburg
+    <br>
+    <br>
+    Tel.: 040 – 428 93 43 0
+  </p>
+  </div>
   <div class='footer-map-footer-div'>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.3093468898915!2d10.220870853136471!3d53.493848775368775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1f2601c4f93ab%3A0x72b621d9c9864af8!2sHansa-Gymnasium%20Bergedorf!5e0!3m2!1sde!2sde!4v1665760760299!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>

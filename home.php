@@ -42,7 +42,7 @@ if($wichtigLoop->have_posts())
 
 wp_reset_postdata();
 
-echo '<h2 class="section-heading">News</h2>';
+echo '<h2 class="section-heading">Neuigkeiten vom Hansa</h2>';
 
 
 $args = array(
@@ -79,7 +79,7 @@ if($loop->have_posts())
 
 ?>
 
-<h2 class="section-heading">Startseite</h2>
+<h2 class="section-heading">Organisation</h2>
 
 
 <?php
