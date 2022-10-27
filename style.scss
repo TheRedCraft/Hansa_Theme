@@ -404,7 +404,7 @@ $clr-background: var(--clr-background);
 	align-items: center;
 }
 .single-post-content {
-	width: 50vw;
+	width: 70vw;
 }
 .single-post-heading {
 	width: 50vw;
@@ -619,7 +619,8 @@ nav {
 			align-items: center;
 			justify-content: center;
 			position: relative;
-			font-size: 27px;
+			font-size: 20px;
+			word-break: break-all;
 			a {
 				height: 100%;
 				text-align: center;
@@ -674,9 +675,10 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 .hansa-icon-div {
 	position: absolute;
+	top: 0;
 	a {
 	padding: 0;
-	margin: 0;
+	margin: 0;word
 		img {
 			position: relative;
 		}
@@ -942,7 +944,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 }
 
 
-@media (cursor:none), (cursor:coarse), (hover:none), screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.first_menu {
 		display: flex;
 		flex-direction: row;

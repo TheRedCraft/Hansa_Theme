@@ -28,5 +28,7 @@ echo "<script>alertCalender()</script>";*/
 ?>
 </body>
 <script src="/wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
+<script src="/wp-content/themes/Hansa_Theme/main.js"></script>
 <script src="/wordpress/wp-content/themes/Hansa_Theme/hamburger.js"></script>
+<script src="/wp-content/themes/Hansa_Theme/hamburger.js"></script>
 </html>
