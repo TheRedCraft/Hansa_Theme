@@ -44,7 +44,6 @@ if ($banana == 'true') {
   echo "<button onclick='nextMonth()'>Nachfolgender Monat</button>";
   echo "</div>";
   echo "</div>";
-  echo "<script src='/wp-content/themes/Hansa_Theme/calender.js'></script>";
   echo "<script src='/wordpress/wp-content/themes/Hansa_Theme/calender.js'></script>";
   $file = fopen("http://localhost/wordpress/wp-content/themes/Hansa_Theme/calenderimgparsed.txt","r");
 
