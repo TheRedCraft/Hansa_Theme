@@ -86,4 +86,3 @@ function dislplayscrolled() {
 setTimeout(function() { document.querySelector('.first_menu').dataset.theme = "weg"; }, 1 );
 window.addEventListener("scroll", dislplayscrolled, false);
 
-
