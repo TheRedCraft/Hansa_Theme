@@ -34,6 +34,9 @@ if ("ontouchstart" in document.documentElement)
 
   let has_childes = document.querySelectorAll('.menu-item-has-children');
   for(i = 0; i < has_childes.length; i++) {
+    a_as_childes = has_childes.querySelector('a')
+    has_childes.querySelector('.sub-menu').innerHTML += a_as_childes;
+    a_as_childes.href = '#';
     has_childes[i].addEventListener('click', function() {
       let has_childes_child_nodes = this.querySelectorAll('.sub-menu')
       for(e = 0; e < has_childes_child_nodes.length; e++) {
