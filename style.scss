@@ -460,17 +460,24 @@ $clr-background: var(--clr-background);
 		padding: 0 10px;
 	}
 }
-.twitch-boxen-wichtig {
-	margin-bottom: 20vh;
+$content-padding: 20px;
+
+.twitch-boxen-wichtig {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
 }
+
 .twitch-box-wichtig {
 	$twitch-height-2: 60vh;
 	$twitch-width-2: 90vw;
 	width: $twitch-width-2;
 	height: $twitch-height-2;
 	position: relative;
+	padding: $content-padding;
 
-	$content-padding: 20px;
+
 
 	.content { 
 		padding: $content-padding;

@@ -415,13 +415,17 @@ a {
 }
 
 .twitch-boxen-wichtig {
-  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
 }
 
 .twitch-box-wichtig {
   width: 90vw;
   height: 60vh;
   position: relative;
+  padding: 20px;
 }
 .twitch-box-wichtig .content {
   padding: 20px;
