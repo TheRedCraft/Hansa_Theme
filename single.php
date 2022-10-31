@@ -55,7 +55,7 @@ if ($banana == 'true') {
 
   fclose($file);
 
-  echo "<script>makeCalenderData();makeCalender(4,2015);</script>";
+  echo "<script>makeCalenderData();makeCalender();</script>";
 }
 
 if ($falafel == 'true')
