@@ -45,7 +45,8 @@ if ($banana == 'true') {
   echo "</div>";
   echo "</div>";
   echo "<script src='/wordpress/wp-content/themes/Hansa_Theme/calender.js'></script>";
-  $file = fopen("http://wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/calenderimgparsed.txt","r");
+  $file = fopen("http://wp.hansa-gymnasium.de/var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/calenderimgparsed.txt","r");
+
 
   while(! feof($file))
     {
