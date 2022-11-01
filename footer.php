@@ -41,16 +41,20 @@ echo "<script>alertCalender()</script>";*/
 </body>
 <script src="./wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
 <script src="./wordpress/wp-content/themes/Hansa_Theme/hamburger.js"></script>
-<script src="/wp-content/themes/Hansa_Theme/main.js"></script>
-<script src="/wp-content/themes/Hansa_Theme/hamburger.js"></script>
-<script src="/wp-content/themes/Hansa_Theme-master/main.js"></script>
-<script src="/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
-<script src="/wp-content/themes/Hansa_Theme-Master/main.js"></script>
-<script src="/wp-content/themes/Hansa_Theme-Master/hamburger.js"></script>
-<script src="./httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
-<script src="./httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
-
-<script src="./var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
-<script src="./var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
-
+<script src="/var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
+<script src="/var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+<script src="/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
+<script src="/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+<script src="/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
+<script src="/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+<script src="/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
+<script src="/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+<script src="/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
+<script src="/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+<script src="/wp-content/themes/Hansa_Theme-master//main.js"></script>
+<script src="/wp-content/themes/Hansa_Theme-master//hamburger.js"></script>
+<script src="/themes/Hansa_Theme-master/main.js"></script>
+<script src="/themes/Hansa_Theme-master//hamburger.js"></script>
+<script src="/Hansa_Theme-master/main.js"></script>
+<script src="/Hansa_Theme-master/hamburger.js"></script>
 </html>
