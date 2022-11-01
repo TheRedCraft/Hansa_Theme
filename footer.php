@@ -46,4 +46,7 @@ echo "<script>alertCalender()</script>";*/
 <script src="/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
 <script src="/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
 
+<script src="/var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/main.js"></script>
+<script src="/var/www/vhosts/wp.hansa-gymnasium.de/httpdocs/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+
 </html>
