@@ -5,6 +5,7 @@ Author: Moritz und Julius
 @import url("./googleFonts.css");
 * {
   font-family: "Poppins", sans-serif;
+  font-weight: lighter;
 }
 
 /*Anfang Slider*/
@@ -651,12 +652,25 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 }
 
 .footer-infos {
-  position: absolute;
+  position: relative;
   width: 50vw;
   left: 20px;
   color: white;
 }
 
+@media screen and (max-width: 1470px) {
+  .first_search {
+    display: none;
+  }
+  nav {
+    right: 4vw;
+  }
+  nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
+    display: block;
+    left: -100%;
+    top: 0;
+  }
+}
 @media screen and (max-width: 1353px) {
   .first_search {
     display: none;
