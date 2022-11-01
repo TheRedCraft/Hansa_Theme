@@ -9,7 +9,6 @@ Author: Moritz und Julius
 
 * {
 	font-family: 'Poppins', sans-serif;
-	font-weight: lighter;
 }
 
 /*Anfang Slider*/
@@ -717,7 +716,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 
 .footer-infos {
-	position: relative;
+	position: absolute;
 	width: 50vw;
 	left: 20px;
 	color: white;
@@ -733,19 +732,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 
 
-@media screen and (max-width: 1470px) {
-	.first_search {
-		display: none;
-	}
-	nav {
-		right: 4vw;
-	}
-	nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu{
-		display: block;
-		left: -100%;
-		top: 0;
-	}
-}
+
 @media screen and (max-width: 1353px) {
 	.first_search {
 		display: none;
