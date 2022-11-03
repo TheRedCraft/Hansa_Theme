@@ -4,8 +4,10 @@ Author: Moritz und Julius
 */
 
 
-@import url('./googleFonts.css');
-
+@font-face {
+	font-family: "Poppins";
+	src: url("/wp-content/themes/Hansa_Theme-master/fonts/Poppins-Regular.ttf");
+}
 
 * {
 	font-family: 'Poppins', sans-serif;
