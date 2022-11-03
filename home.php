@@ -42,7 +42,7 @@ if($wichtigLoop->have_posts())
 
 wp_reset_postdata();
 
-echo '<h2 class="section-heading">Neuigkeiten vom Hansa</h2>';
+echo '<h2 class="section-heading">Was ist los am Hansa?</h2>';
 
 
 $args = array(
