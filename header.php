@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
+    <script src="/wp-content/themes/Hansa_Theme-master/calender.js"></script>
 </head>
 <body onload="searchgrid()">
     <?php
