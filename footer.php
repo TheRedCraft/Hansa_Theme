@@ -41,6 +41,8 @@ echo "<script>alertCalender()</script>";*/
 </body>
 <script src="./wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
 <script src="./wordpress/wp-content/themes/Hansa_Theme/hamburger.js"></script>
+<script src="./wordpress/wp-content/themes/Hansa_Theme/calender.js"></script>
 <script src="/wp-content/themes/Hansa_Theme-master/main.js"></script>
 <script src="/wp-content/themes/Hansa_Theme-master/hamburger.js"></script>
+<script src="/wp-content/themes/Hansa_Theme-master/calender.js"></script>
 </html>
