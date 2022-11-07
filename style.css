@@ -606,16 +606,17 @@ nav ul > .menu-item-has-children:hover > .sub-menu {
   background-color: white;
   border: 1px solid lightgray;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   min-width: 200px;
   list-style-type: none;
   border-radius: 10px;
   z-index: 999;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 nav ul > .menu-item-has-children:hover > .sub-menu a {
   color: black;
   padding: 0.25rem;
-  text-align: center;
+  text-align: left;
   display: block;
   text-decoration: none;
 }
@@ -942,11 +943,18 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     display: block;
     text-align: left;
   }
+  nav li {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    text-align: left;
+  }
   nav ul > .menu-item-has-children:hover > .sub-menu {
     display: block;
     height: auto;
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: 0;
     left: 0;
     background-color: transparent;
     border: 1px solid transparent;
@@ -955,12 +963,14 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     width: 200px;
     list-style-type: none;
     border-radius: 10px;
+    box-shadow: none;
     z-index: 999;
+    text-align: left;
   }
   nav ul > .menu-item-has-children:hover > .sub-menu a {
     color: white;
-    padding: 0.25rem;
-    text-align: center;
+    padding: 0.25rem 3rem;
+    text-align: left;
     display: block;
     text-decoration: none;
   }
