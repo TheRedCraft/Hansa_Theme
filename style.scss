@@ -3,7 +3,9 @@ Theme Name: Hansa-Theme
 Author: Moritz und Julius
 */
 
-
+body {
+	overflow-y: visible;
+}
 @font-face {
 	font-family: "Poppins";
 	src: url("/wp-content/themes/Hansa_Theme-master/fonts/Poppins-Regular.ttf");
@@ -495,7 +497,7 @@ $content-padding: 20px;
 		flex-direction: row;
 		.wichtig-col2 {
 			margin-left: 10vh;
-			overflow-y: scroll;
+			overflow-y: hidden;
 		}
 		.wichtig-col1 {
 			font-size: 30px;
@@ -653,7 +655,9 @@ nav {
 	}
 
 }
-
+.menu-item {
+	font-size: 24px;
+}
 nav ul > .menu-item-has-children:hover > .sub-menu {
 	display: block;
 	height: auto;
@@ -735,7 +739,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 
 
-@media screen and (max-width: 1353px) {
+@media screen and (max-width: 1300px) {
 	.first_search {
 		display: none;
 	}
@@ -963,7 +967,11 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 
 @media (cursor:none), (cursor:coarse), (hover:none), screen and (max-width: 600px) {
-	
+	#menu-header-menu {
+		height: auto;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
 	.first_menu {
 		display: flex;
 		flex-direction: row;
@@ -991,7 +999,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 		flex-direction: column;
 		background-color: #262626;
 		width: 100%;
-		height: 50vh;
+		height: auto;
 		top: 10vh;
 		text-align: center;
 		transition: 0.3s;
@@ -1079,5 +1087,4 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 		left: 0;
 		top: 0;
 	}
-
 }

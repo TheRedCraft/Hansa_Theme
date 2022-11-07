@@ -287,3 +287,44 @@
 08/31/15 00:00?09/01/15 00:00?Einschulung Kl. 5
 09/11/15 00:00?09/12/15 00:00?Ehemaligentreffen
 07/03/15 18:30?07/03/15 20:30?Abi-Feier
+10/24/22 13:40?10/24/22 15:10?Websitegestaltung R208
+10/25/22 13:40?10/25/22 15:10?TdoT-Planung
+12/15/22 13:40?12/15/22 18:00?Eislaufen Schulgeschwister
+11/04/22 00:00?11/05/22 00:00?Ganztageskonferfenz
+10/31/22 00:00?11/01/22 00:00?Reformationstag (unterrichtsfrei)
+10/24/22 19:00?10/24/22 20:30?Schulkonferenz
+11/19/22 10:00?11/19/22 13:00?Tag der offenen Tür
+12/08/22 18:00?12/08/22 22:00?Weihnachtskonzert - St.Severini
+12/12/22 19:00?12/12/22 20:30?Schulkonferenz
+12/23/22 00:00?01/07/23 00:00?Weihnachtsferien
+01/25/23 16:00?01/25/23 21:00?LEG
+01/25/23 00:00?01/26/23 00:00?Zeugnisse
+01/26/23 00:00?01/27/23 00:00?LEG (unterrichtsfrei)
+01/27/23 00:00?01/28/23 00:00?Halbjahrespause (unterrichtsfrei)
+01/30/23 00:00?02/04/23 00:00?Anmeldung 5
+02/07/23 00:00?02/10/23 00:00?Infoabende 10
+02/10/23 00:00?02/11/23 00:00?Profil-Schnuppertag
+02/14/23 00:00?02/15/23 00:00?Infoabend 10
+02/16/23 00:00?02/17/23 00:00?Infoabend 10
+02/21/23 00:00?02/22/23 00:00?Elternabend 7/8
+02/22/23 00:00?02/23/23 00:00?Elternabend 7/8
+03/01/23 00:00?03/02/23 00:00?Elternabend 5/S2
+03/02/23 00:00?03/03/23 00:00?Elternabend 5/S2
+03/06/23 00:00?03/19/23 00:00?Osterferien
+03/22/23 00:00?03/23/23 00:00?Elternabend 6/10
+03/23/23 00:00?03/24/23 00:00?Elternabend 6/10
+04/07/23 00:00?04/08/23 00:00?Karfreitag (unterrichtsfrei
+04/11/23 00:00?04/12/23 00:00?Letzter Tag S4
+04/10/23 00:00?04/11/23 00:00?Ostermontag (unterrichtsfrei)
+04/17/23 19:00?04/17/23 20:30?Schulkonferenz
+04/18/23 00:00?04/19/23 00:00?Zeugnisse S4
+04/19/23 00:00?05/06/23 00:00?Abiturprüfunungen
+04/27/23 00:00?04/28/23 00:00?Girls- and Boysday
+05/01/23 00:00?05/02/23 00:00?Tag der Arbeit (unterrichtsfrei)
+05/15/23 00:00?05/20/23 00:00?Pfingstferien
+05/29/23 00:00?05/30/23 00:00?Pfingstmontag (unterrichtsfrei)
+06/02/23 00:00?06/03/23 00:00?Jobtag S2
+06/05/23 19:00?06/05/23 20:30?Schulkonferenz
+07/03/23 00:00?07/08/23 00:00?Reise- und Projektwoche
+07/10/23 00:00?07/11/23 00:00?Abi-Feier
+07/12/23 00:00?07/13/23 00:00?Zeugnisausgabe

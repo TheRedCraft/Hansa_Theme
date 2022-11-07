@@ -14,6 +14,11 @@ if ("ontouchstart" in document.documentElement)
     } else {
       nav.style.display = 'block';
     }
+    if (document.querySelector('body').style.overflow == 'visible') {
+      document.querySelector('body').style.overflow = 'hidden';
+    } else {
+      document.querySelector('body').style.overflow = 'visible';
+    }
   });
 
   /*document.querySelectorAll('.menu-item').forEach(n => {
