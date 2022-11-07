@@ -965,6 +965,11 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 	}
 }
 
+@media (max-width: 520) {
+	.twitch-head {
+		font-size: 20px;
+	}
+}
 
 @media (cursor:none), (cursor:coarse), (hover:none), screen and (max-width: 600px) {
 	#menu-header-menu {
@@ -983,6 +988,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 	}
 	.menu-item {
 		overflow-y: scroll;
+		width: 100%;
 	}
 	.first_menu {
 		display: flex;
