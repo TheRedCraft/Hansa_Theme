@@ -874,6 +874,9 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     overflow-y: scroll;
     overflow-x: hidden;
   }
+  .sub-menu {
+    overflow-y: scroll;
+  }
   .menu-item {
     overflow-y: scroll;
   }
