@@ -78,6 +78,7 @@ function changeVisible() {
 let menuitem_has_children_einrücken = document.querySelectorAll('#menu-header-menu')
 
 for(s = 0; s < menuitem_has_children_einrücken.length; s++) {
+  console.log(menuitem_has_children_einrücken)
   menuitem_has_children_einrücken.style.marginLeft = s * 30 + "px";
   menuitem_has_children_einrücken = menuitem_has_children_einrücken.querySelectorAll('.sub-menu')
 }
