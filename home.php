@@ -20,13 +20,14 @@ if($wichtigLoop->have_posts())
   {
     $wichtigLoop->the_post();
     echo "<div class='wichtig-post-box-new-style'>";
+    echo "<a href='".get_the_permalink()."'>";
     echo "<div class='wichtig-col1'>";
     the_title('<h2 class="wichtig-post-new-style-heading">', '</h2>');
     echo "<div class='wichtig-content-div'>";
     the_content();
     echo "</div>";
-    echo "<a href='".get_the_permalink()."'>mehr erfahren ></a>";
-    echo "</div><div class='wichtig-col2'>";
+    echo "<a class='see-more' href='".get_the_permalink()."'>mehr erfahren ></a>";
+    echo "</div></a><div class='wichtig-col2'>";
     the_post_thumbnail();
     echo "</div></div>";
   }

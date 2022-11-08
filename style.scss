@@ -486,6 +486,13 @@ $content-padding: 20px;
 	width: 100vw;
 }
 .wichtig-post-box-new-style {
+	.wichtig-col1 {
+		* {
+			text-decoration: none;
+		}
+	}
+}
+.wichtig-post-box-new-style {
 	width: 80vw;
 	height: 80vh;
 	padding: 30px;
@@ -493,7 +500,9 @@ $content-padding: 20px;
 	flex-direction: row;
 	justify-content: space-around;
 	overflow: hidden;
+	text-decoration: none !important;
 	.wichtig-col1 {
+		text-decoration: none !important;
 		background-color: #999;
 		overflow: hidden;
 		height: 60%;
@@ -503,7 +512,11 @@ $content-padding: 20px;
 		left: 0;
 		padding: 5%;
 		z-index: 10;
+		.wichtig-post-new-syle-heading {
+			text-decoration: none !important;
+		}
 		.wichtig-content-div {
+			text-decoration: none !important;
 			height: 60%;
 			overflow: hidden;
 			padding-bottom: 16px;
@@ -511,8 +524,10 @@ $content-padding: 20px;
 		* {
 			background-color: #999 !important;
 			color: black;
-		
 		a {
+			text-decoration: none;
+		}
+		.see-more {
 			text-decoration: none;
 			padding-top: 16px;
 			margin-top: 100%;
@@ -750,6 +765,11 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 
 }
 @media screen and (max-width: 850px) {
+	.hansa-motto-overlay {
+		p {
+			display: hidden;
+		}
+	}
 	.wichtig-post-box-new-style {
 		flex-direction: column;
 		.wichtig-col1 {

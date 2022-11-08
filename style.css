@@ -445,6 +445,10 @@ a {
   width: 100vw;
 }
 
+.wichtig-post-box-new-style .wichtig-col1 * {
+  text-decoration: none;
+}
+
 .wichtig-post-box-new-style {
   width: 80vw;
   height: 80vh;
@@ -453,8 +457,10 @@ a {
   flex-direction: row;
   justify-content: space-around;
   overflow: hidden;
+  text-decoration: none !important;
 }
 .wichtig-post-box-new-style .wichtig-col1 {
+  text-decoration: none !important;
   background-color: #999;
   overflow: hidden;
   height: 60%;
@@ -465,7 +471,11 @@ a {
   padding: 5%;
   z-index: 10;
 }
+.wichtig-post-box-new-style .wichtig-col1 .wichtig-post-new-syle-heading {
+  text-decoration: none !important;
+}
 .wichtig-post-box-new-style .wichtig-col1 .wichtig-content-div {
+  text-decoration: none !important;
   height: 60%;
   overflow: hidden;
   padding-bottom: 16px;
@@ -476,12 +486,15 @@ a {
 }
 .wichtig-post-box-new-style .wichtig-col1 * a {
   text-decoration: none;
+}
+.wichtig-post-box-new-style .wichtig-col1 * .see-more {
+  text-decoration: none;
   padding-top: 16px;
   margin-top: 100%;
   position: relative;
   bottom: 0px;
 }
-.wichtig-post-box-new-style .wichtig-col1 * a:hover {
+.wichtig-post-box-new-style .wichtig-col1 * .see-more:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -689,6 +702,9 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   }
 }
 @media screen and (max-width: 850px) {
+  .hansa-motto-overlay p {
+    display: hidden;
+  }
   .wichtig-post-box-new-style {
     flex-direction: column;
   }
