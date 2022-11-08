@@ -97,7 +97,6 @@
           }
         }
 
-
         if($count > 0)
         {
           $slideBtnCounter = 1;
@@ -132,5 +131,9 @@
         /* Test of source control vscode, more change */
         ?>
 
+    </div>
+    <div class="hansa-motto-overlay">
+      <h2>Hansa-Gymnasium Bergedorf</h2>
+      <p>familiär - teamorientiert - ganzheitlich - kompetent</p>
     </div>
   <?php }?>

@@ -221,7 +221,21 @@ $twitch-height: 30vw;
 }
 
 /*Ende Twitch Box*/
-
+.hansa-motto-overlay {
+	position: absolute;
+	top: 40vh;
+	left: 10vw;
+	h2 {
+		color: white;
+		font-size: 60px;
+		font-weight: lighter;
+	}
+	p {
+		font-weight: lighter;
+		color: white;
+		font-size: 40px;
+	}
+}
 /*Footer Anfang*/
 
 .section-heading {

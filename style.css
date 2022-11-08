@@ -176,6 +176,22 @@ a {
 }
 
 /*Ende Twitch Box*/
+.hansa-motto-overlay {
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+}
+.hansa-motto-overlay h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: lighter;
+}
+.hansa-motto-overlay p {
+  font-weight: lighter;
+  color: white;
+  font-size: 40px;
+}
+
 /*Footer Anfang*/
 .section-heading {
   position: relative;
