@@ -19,23 +19,16 @@ if($wichtigLoop->have_posts())
   while($wichtigLoop -> have_posts())
   {
     $wichtigLoop->the_post();
-    echo "<a href='".get_the_permalink()."'>";
-    echo "<div class='twitch-box-wichtig'>";
-    echo "<div class='content'>";
+    echo "<div class='wichtig-post-box-new-style'>";
     echo "<div class='wichtig-col1'>";
-    the_post_thumbnail();
-    the_title('<h2 class="twitch-head">', '</h2>');
-    echo "</div>";
-    echo "<div class='wichtig-col2'>";
+    the_title('<h2 class="wichtig-post-new-style-heading">', '</h2>');
+    echo "<div class='wichtig-content-div'>";
     the_content();
     echo "</div>";
-    echo "</div>";
-    echo "<div class='twitch-border-effect'>";
-    echo "<div class='top-corner'></div>";
-    echo "<div class='bottom-corner'></div>";
-    echo "</div>";
-    echo "</div>";
-    echo "</a>";
+    echo "<a href='".get_the_permalink()."'>mehr erfahren ></a>";
+    echo "</div><div class='wichtig-col2'>";
+    the_post_thumbnail();
+    echo "</div></div>";
   }
   echo "</div>";
 }
