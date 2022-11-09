@@ -466,7 +466,7 @@ a {
 }
 .wichtig-post-box-new-style .wichtig-col1 {
   text-decoration: none !important;
-  background-color: #999;
+  background-color: #FCBE6E;
   overflow: hidden;
   height: 60%;
   width: 40%;
@@ -486,7 +486,7 @@ a {
   padding-bottom: 16px;
 }
 .wichtig-post-box-new-style .wichtig-col1 * {
-  background-color: #999 !important;
+  background-color: #FCBE6E !important;
   color: black;
 }
 .wichtig-post-box-new-style .wichtig-col1 * a {
@@ -721,11 +721,15 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     margin: 0;
     width: 70%;
     padding: 0;
+    top: 10px;
   }
   .wichtig-post-box-new-style .wichtig-col2 img {
     width: 100%;
     height: 100%;
     margin: 0;
+  }
+  .wichtig-content-div {
+    display: none;
   }
   nav {
     right: 4vw;
