@@ -222,18 +222,24 @@ $twitch-height: 30vw;
 
 /*Ende Twitch Box*/
 .hansa-motto-overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: absolute;
-	top: 40vh;
-	left: 10vw;
+	width: 100%;
+	top: 30vh;
+	text-align: center;
+	opacity: 0.7;
+
 	h2 {
 		color: white;
-		font-size: 60px;
+		font-size: 40px;
 		font-weight: lighter;
 	}
 	p {
 		font-weight: lighter;
 		color: white;
-		font-size: 40px;
+		font-size: 30px;
 	}
 }
 /*Footer Anfang*/
@@ -766,9 +772,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 }
 @media screen and (max-width: 850px) {
 	.hansa-motto-overlay {
-		p {
-			display: hidden;
-		}
+		display: none;
 	}
 	.wichtig-post-box-new-style {
 		flex-direction: column;
@@ -911,9 +915,9 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 	}
 }
 
-@media (max-width: 520) {
+@media (max-width: 520px) {
 	.twitch-head {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 // mobile media tag
@@ -1034,7 +1038,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 		border: 1px solid transparent;
 		margin: 0;
 		padding: 0;
-		width: 200px;
+		width: 100%;
 		list-style-type: none;
 		border-radius: 10px;
 		box-shadow: none;
@@ -1046,6 +1050,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 			text-align: left;
 			display: block;
 			text-decoration: none;
+			overflow-x: visible;
 		}
 	}
 
@@ -1053,5 +1058,9 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 		display: block;
 		left: 0;
 		top: 0;
+	}
+	.first_search {
+		position: absolute;
+		right: 85px;
 	}
 }
