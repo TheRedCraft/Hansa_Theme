@@ -89,6 +89,7 @@ window.addEventListener("scroll", dislplayscrolled, false);
 
 function make_Oberstufe() {
   console.log('hi');
+  Neue_seite = "";
   const Kachlen_einfüge_zeichen = "Æ";
   let Seiten_inhalt = document.querySelector('.single-post-content').innerHTML;
 
@@ -97,5 +98,9 @@ function make_Oberstufe() {
   for(h = 0; h < Trennung_1.length; h++) {
     console.log(Trennung_1[h]);
   }
+
+  Neue_seite = Trennung_1[0] + document.querySelector('.twitch-boxen') + Trennung_1[1]
+
+  document.querySelector('.single-post-content').innerHTML = Neue_seite;
 
 }
