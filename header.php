@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
     <script src="/wp-content/themes/Hansa_Theme-master/calender.js"></script>
+    <script src="/wp-content/themes/Hansa_Theme-master/main.js"></script>
 </head>
 <body onload="searchgrid()">
     <?php
