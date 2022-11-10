@@ -88,7 +88,14 @@ window.addEventListener("scroll", dislplayscrolled, false);
 
 
 function make_Oberstufe() {
+  console.log('hi');
   const Kachlen_einfüge_zeichen = "Æ";
-  document.getElementById
+  let Seiten_inhalt = document.querySelector('.single-post-content').innerHTML;
+
+  let Trennung_1 = Seiten_inhalt.split(Kachlen_einfüge_zeichen);
+
+  for(h = 0; h < Trennung_1.length; h++) {
+    console.log(Trennung_1[h]);
+  }
 
 }
