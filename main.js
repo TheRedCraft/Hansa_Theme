@@ -98,9 +98,9 @@ function make_Oberstufe() {
   for(h = 0; h < Trennung_1.length; h++) {
     console.log(Trennung_1[h]);
   }
-
+  document.querySelector('.twitch-boxen').id = "todelete";
   Neue_seite = Trennung_1[0] + '<div class="twitch-boxen" style="grid-template-rows: 30vw; margin-left: -15vw">' + document.querySelector('.twitch-boxen').innerHTML + '</div>' + Trennung_1[1]
 
   document.querySelector('.single-post-content').innerHTML = Neue_seite;
-
+  document.getElementById('todelete').remove();
 }
