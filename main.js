@@ -88,5 +88,7 @@ window.addEventListener("scroll", dislplayscrolled, false);
 
 
 function make_Oberstufe() {
-  
+  const Kachlen_einfüge_zeichen = "Æ";
+  document.getElementById
+
 }
