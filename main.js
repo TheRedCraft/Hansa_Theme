@@ -99,7 +99,7 @@ function make_Oberstufe() {
     console.log(Trennung_1[h]);
   }
 
-  Neue_seite = Trennung_1[0] + document.querySelector('.twitch-boxen') + Trennung_1[1]
+  Neue_seite = Trennung_1[0] + document.querySelector('.twitch-boxen').innerHTML + Trennung_1[1]
 
   document.querySelector('.single-post-content').innerHTML = Neue_seite;
 
