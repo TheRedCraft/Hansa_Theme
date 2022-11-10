@@ -16,6 +16,9 @@
     <br>
     <br>
     Tel.: 040 – 428 93 43 0
+    <br>
+    <br>
+    © Hansa-Gymnasium Bergedorf 2022. Alle Rechte vorbehalten.
   </p>
   </div>
   </div>
