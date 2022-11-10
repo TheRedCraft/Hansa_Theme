@@ -91,7 +91,7 @@ if ($falafel == 'true')
       }
       echo "</div>";
     }
-
+    echo "<script>make_Oberstufe();</script>"
   }
 
 ?>

@@ -87,3 +87,6 @@ setTimeout(function() { document.querySelector('.first_menu').dataset.theme = "w
 window.addEventListener("scroll", dislplayscrolled, false);
 
 
+function make_Oberstufe() {
+  
+}

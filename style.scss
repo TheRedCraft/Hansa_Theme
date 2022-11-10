@@ -627,7 +627,7 @@ nav {
 	}
 	
 	.menu-header-menu-container {
-		height: 100vh;
+		height: 100%;
 		margin: 0;
 	}
 	ul {
@@ -942,6 +942,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 	.menu-header-menu-container {
 		overflow-y: scroll;
 		overflow-x: hidden;
+		height: 100vh;
 	}
 	.sub-menu {
 		overflow-y: scroll;
@@ -952,6 +953,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 		overflow-x: hidden;
 		width: 100%;
 	}
+
 	.first_menu {
 		display: flex;
 		flex-direction: row;
