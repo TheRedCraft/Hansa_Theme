@@ -737,7 +737,15 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 	transition: all 0.3s ease-in-out;
 	background-color: var(--clr-prime);
 }
-
+.twitch-box-date {
+	margin: 0;
+	width: auto;
+	font-size: 12px;
+	padding: 4px;
+	height: auto;
+	background-color: #3660E3;
+	color: white;
+}
 
 
 

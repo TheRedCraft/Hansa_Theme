@@ -59,6 +59,9 @@ if($loop->have_posts())
     echo "<div class='twitch-box'>";
     echo "<div class='content'>";
     the_post_thumbnail();
+    echo "<div class='twitch-box-date'>";
+    the_date('d M Y');
+    echo "</div>";
     the_title('<h2 class="twitch-head">', '</h2>');
     echo "</div>";
     echo "<div class='twitch-border-effect'>";
