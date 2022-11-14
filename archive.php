@@ -16,8 +16,8 @@ if(have_posts())
     echo "<div class='twitch-boxen'>";
     while(have_posts())
     {
-        echo "<a href='".get_the_permalink()."'>";
         the_post();
+        echo "<a href='".get_the_permalink()."'>";
         echo "<div class='twitch-box'>";
         echo "<div class='content'>";
         the_post_thumbnail();
@@ -32,7 +32,7 @@ if(have_posts())
         echo "</div>";
         echo "</div>";
         echo "</a>";
-
+        wp_reset_postdata();
     }
     echo "</div>";
 }
