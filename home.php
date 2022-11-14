@@ -1,11 +1,11 @@
-<?php get_header(); ?> <!--Header COde aus der Header.php laden-->
+<?php get_header(); ?> <!--Header Code aus der Header.php laden-->
 
 <?php
 
 /* Test */
 echo "<div class='main-content'>";
 
-$argsWichtig = array(
+$argsWichtig = array( //wichtig post laden
   'posts_per_page' => 1,
   'category_name' => 'wichtig',
   'category__not_in' => array(get_cat_ID('sliderImg')),
@@ -13,7 +13,7 @@ $argsWichtig = array(
 
 $wichtigLoop = new WP_Query($argsWichtig);
 
-if($wichtigLoop->have_posts())
+if($wichtigLoop->have_posts()) //Twitch box für den wichtig post erstellen
 {
   echo "<div class='twitch-boxen twitch-boxen-wichtig'>";
   while($wichtigLoop -> have_posts())
@@ -36,10 +36,10 @@ if($wichtigLoop->have_posts())
 
 wp_reset_postdata();
 
-echo '<h2 class="section-heading">Was ist los am Hansa?</h2>';
+echo '<h2 class="section-heading">Was ist los am Hansa?</h2>'; //Überschrift hinzufügen
 
 
-$args = array(
+$args = array( //Argumente für News Post
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
@@ -49,7 +49,7 @@ $args = array(
 
 $loop = new WP_Query($args);
 
-if($loop->have_posts())
+if($loop->have_posts()) // Twitch boxen laden/einfügen
 {
   echo "<div class='twitch-boxen'>";
   while($loop->have_posts())
@@ -76,7 +76,7 @@ if($loop->have_posts())
 
 ?>
 
-<h2 class="section-heading">Organisation</h2>
+<h2 class="section-heading">Organisation</h2> <!--
 
 
 <?php
