@@ -1,14 +1,14 @@
-document.querySelector('.menu-header-menu-container').classList.add('notActive')
-window.addEventListener('resize', mak_h());
+document.querySelector('.menu-header-menu-container').classList.add('notActive') //Standardmäßig menü nicht ausgeklappt
+window.addEventListener('resize', mak_h()); //wenn Resize Hamburger erstellen
 function make_h() {
   if(window.innerWidth <= 900) {
     make_hamburger();
   }
 }
 
-make_h();
+make_h(); //Beim start gucken ob Hamburger erstellt werden muss
 
-function make_hamburger() {
+function make_hamburger() { //Hamburger erstellen/formatieren
   hamburger = document.querySelector('.hamburger')
   navMenu = document.querySelector('.menu-header-menu-container')
   nav = document.querySelector('nav');
@@ -74,7 +74,7 @@ function make_hamburger() {
 }
 
 
-if ("ontouchstart" in document.documentElement)
+if ("ontouchstart" in document.documentElement) // wenn das display touch ist hamburger erstellen/formatieren
 {
   hamburger = document.querySelector('.hamburger')
   navMenu = document.querySelector('.menu-header-menu-container')
@@ -140,7 +140,7 @@ if ("ontouchstart" in document.documentElement)
   }
 }
 
-function changeVisible() {
+function changeVisible() { //Nav visible toggeln
   nav = document.querySelector('nav');
   if (nav.style.display == 'block') {
     nav.style.display = 'none';
@@ -148,4 +148,3 @@ function changeVisible() {
     nav.style.display = 'block';
   }
 }
-

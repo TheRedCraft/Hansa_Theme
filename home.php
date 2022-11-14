@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?> <!--Header COde aus der Header.php laden-->
 
 <?php
 

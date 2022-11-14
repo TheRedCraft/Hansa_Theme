@@ -1,6 +1,6 @@
 <?php
 
-function enqueue_styles()
+function enqueue_styles() //CSS Datei einbinden
 {
     wp_enqueue_style('main', get_template_directory_uri() . '/style.css');
 }
@@ -16,7 +16,8 @@ function make_nav_menu()
     }
 add_action('wp_enqueue_scripts', 'load_style', 'make_nav_menu');
 */
-function setup_theme() {
+
+function setup_theme() { //Nav Menüs registrieren / einbinden
     register_nav_menus(array(
         'header-menu' => 'Header Menü',
         'footer-menu' => 'Footer Menü'
@@ -24,6 +25,6 @@ function setup_theme() {
 }
 add_action('after_setup_theme', "setup_theme");
 
-add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails' ); //Post thumbnails möglichmachen / einbinden
 
-add_theme_support( 'menus' );
+add_theme_support( 'menus' ); //Menü support einbinden / aktivieren
