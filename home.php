@@ -76,14 +76,14 @@ if($loop->have_posts()) // Twitch boxen laden/einfügen
 
 ?>
 
-<h2 class="section-heading">Organisation</h2> <!--
+<h2 class="section-heading">Organisation</h2> <!--Überschrift-->
 
 
 <?php
 
 wp_reset_postdata();
 
-$args2 = array(
+$args2 = array( //Argumente statische Posts
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
@@ -93,7 +93,7 @@ $args2 = array(
 
 $loop2 = new WP_Query($args2);
 
-if($loop2->have_posts())
+if($loop2->have_posts()) //Statische Posts einbinden/hinzufügen
 {
   echo "<div class='twitch-boxen'>";
   while($loop2->have_posts())
@@ -116,4 +116,4 @@ if($loop2->have_posts())
 }
 echo "</div>";
 ?>
-<?php get_footer(); ?>
+<?php get_footer(); ?> <!--Footer aus der Footer.php laden-->
