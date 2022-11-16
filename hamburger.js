@@ -1,5 +1,5 @@
 document.querySelector('.menu-header-menu-container').classList.add('notActive') //Standardmäßig menü nicht ausgeklappt
-window.addEventListener('resize', mak_h()); //wenn Resize Hamburger erstellen
+window.addEventListener('resize', make_h()); //wenn Resize Hamburger erstellen
 function make_h() {
   if(window.innerWidth <= 900) {
     make_hamburger();
