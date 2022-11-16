@@ -1,11 +1,10 @@
-<?php get_header(); ?>
+<?php get_header(); ?> <!--Header aus der Header.php laden/einfügen-->
 
 <?php
 
-/* Test */
 echo "<div class='main-content'>";
 
-$argsWichtig = array(
+$argsWichtig = array( //Argumente wichtig post
   'posts_per_page' => 1,
   'category_name' => 'wichtig',
   'category__not_in' => array(get_cat_ID('sliderImg')),
@@ -13,7 +12,7 @@ $argsWichtig = array(
 
 $wichtigLoop = new WP_Query($argsWichtig);
 
-if($wichtigLoop->have_posts())
+if($wichtigLoop->have_posts())//Wichtig Post einfügen/laden
 {
   echo "<div class='twitch-boxen twitch-boxen-wichtig'>";
   while($wichtigLoop -> have_posts())
@@ -42,10 +41,10 @@ if($wichtigLoop->have_posts())
 
 wp_reset_postdata();
 
-echo '<h2 class="section-heading">News</h2>';
+echo '<h2 class="section-heading">News</h2>'; //Überschrift
 
 
-$args = array(
+$args = array( //Argumente für die News Posts
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
@@ -55,7 +54,7 @@ $args = array(
 
 $loop = new WP_Query($args);
 
-if($loop->have_posts())
+if($loop->have_posts()) //News Posts laden und richtig einfügen 
 {
   echo "<div class='twitch-boxen'>";
   while($loop->have_posts())
@@ -79,14 +78,14 @@ if($loop->have_posts())
 
 ?>
 
-<h2 class="section-heading">Startseite</h2>
+<h2 class="section-heading">Startseite</h2> <!--Überschrift-->
 
 
 <?php
 
 wp_reset_postdata();
 
-$args2 = array(
+$args2 = array( //Argumete statische Posts
   'posts_per_page' => 8,
   'post_status' => 'publish',
   'post_type' => 'post',
@@ -96,7 +95,7 @@ $args2 = array(
 
 $loop2 = new WP_Query($args2);
 
-if($loop2->have_posts())
+if($loop2->have_posts()) //Statische Posts laden/einfügen
 {
   echo "<div class='twitch-boxen'>";
   while($loop2->have_posts())
@@ -119,4 +118,4 @@ if($loop2->have_posts())
 }
 echo "</div>";
 ?>
-<?php get_footer(); ?>
+<?php get_footer(); ?> <!--Footer aus derr Footer.php laden/einfügen-->
