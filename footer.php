@@ -7,14 +7,17 @@
   ) ) ?>
   </div>
   <div class="footer-infos">  <!--Footer Infos-->
-    <p>
+  <p>
     Hansa-Gymnasium Bergedorf
     <br>
     Hermann-Distel-Str. 25
     <br>
     21029 Hamburg
+	 <br>
     <br>
+	info(at)hansa.hamburg.de	
     <br>
+	<br>
     Tel.: 040 – 428 93 43 0
   </p>
   </div>

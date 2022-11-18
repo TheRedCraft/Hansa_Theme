@@ -6,6 +6,7 @@ Author: Moritz und Julius
 body {
 	overflow-y: visible;
 }
+/* Schriftart in fonts abgespeichert*/
 @font-face {
 	font-family: "Poppins";
 	src: url("/wp-content/themes/Hansa_Theme-master/fonts/Poppins-Regular.ttf");
@@ -14,7 +15,7 @@ body {
 * {
 	font-family: 'Poppins', sans-serif;
 }
-/*Hallos*/
+
 /*Anfang Slider*/
 html, body {
 	overflow-x: hidden;
@@ -116,15 +117,12 @@ $slider-prime: #3660E3;
 
 
   }
-
-
-
   /*Ende Image Slider*/
  
+
   /*Anfang Twitch Box*/
 
-
-$prime: #143e97;
+$prime: #2959c5; /*Hansa-Blau der Websiete */
 $second: #0c1016;
 
 $borderSize: 0.5rem;
