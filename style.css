@@ -445,6 +445,7 @@ a {
   padding: 0 10px;
 }
 
+/*Wichtig post, der oben gehalten wird. Es ist in zwei Spalten unterteilt*/
 .twitch-boxen-wichtig {
   display: flex;
   flex-direction: column;
@@ -506,10 +507,10 @@ a {
   cursor: pointer;
 }
 .wichtig-post-box-new-style .wichtig-col2 {
-  height: 80%;
+  height: 90%;
   width: 60%;
   position: relative;
-  top: 100px;
+  /*top: 100px;*/
   margin: 0;
   z-index: 100;
   padding-left: -100;
@@ -519,11 +520,12 @@ a {
 }
 .wichtig-post-box-new-style .wichtig-col2 img {
   width: 80%;
-  height: 80%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+/*Footer begin*/
 .footer {
   grid-template-columns: 30vw 70vw;
 }
