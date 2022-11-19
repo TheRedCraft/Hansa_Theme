@@ -487,6 +487,7 @@ $clr-background: var(--clr-background);
 }
 $content-padding: 20px;
 
+/*Wichtig post, der oben gehalten wird. Es ist in zwei Spalten unterteilt*/
 .twitch-boxen-wichtig {	
 	display: flex;
 	flex-direction: column;
@@ -549,10 +550,10 @@ $content-padding: 20px;
 }
 	}
 	.wichtig-col2 {
-		height: 80%;
+		height: 90%;
 		width: 60%;;
 		position: relative;
-		top: 100px;
+		/*top: 100px;*/
 		margin: 0;
 		z-index: 100;
 		padding-left: -100;
@@ -561,7 +562,7 @@ $content-padding: 20px;
 		align-items: center;
 		img {
 			width: 80%;
-			height: 80%;
+			height: 100%;
 			object-fit: cover;
 		}
 	}
@@ -570,7 +571,7 @@ $content-padding: 20px;
 
 
 
-
+/*Footer begin*/
 
 .footer {
 	grid-template-columns: 30vw 70vw;
