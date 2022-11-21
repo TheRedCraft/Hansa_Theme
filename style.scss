@@ -1115,6 +1115,28 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 }
 // mobile media tag
 @media (cursor:none), (cursor:coarse), (hover:none), screen and (max-width: 600px) {
+	.first_search {
+		display: block;
+		position: absolute;
+		bottom: 30%;
+		scale: .6;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		.search-form {
+			margin-left: 200px;
+			position: absolute;
+			bottom: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			.submit-button {
+				margin-left: 10px;
+				display: none;
+			}
+		}
+	}
 	#menu-header-menu {
 		height: auto;
 		overflow-y: scroll;
