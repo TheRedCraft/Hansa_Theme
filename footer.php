@@ -15,7 +15,7 @@
     21029 Hamburg
 	 <br>
     <br>
-	info(at)hansa.hamburg.de	
+   hansa-gymnasium-bergedorf(at)bsb.hamburg.de 	
     <br>
 	<br>
     Tel.: 040 – 428 93 43 0
