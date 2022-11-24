@@ -709,6 +709,11 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   color: white;
 }
 
+.auszeichnungen {
+  position: absolute;
+  right: 100px;
+}
+
 @media screen and (max-width: 1300px) {
   .first_search {
     display: none;
@@ -878,6 +883,11 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
 @media (max-width: 990px) {
   .twitch-head {
     font-size: 17px;
+  }
+}
+@media (max-width: 530px) {
+  .auszeichnungen {
+    display: none;
   }
 }
 @media (max-width: 330px) {
