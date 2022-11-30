@@ -714,6 +714,14 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   right: 100px;
 }
 
+.text-input {
+  z-index: 100;
+}
+
+.first_search {
+  z-index: 100;
+}
+
 @media screen and (max-width: 1300px) {
   .first_search {
     display: none;
