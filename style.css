@@ -431,9 +431,18 @@ a {
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 100px;
-  color: white;
+  color: white !important;
   padding-left: 10px;
   width: 300px;
+}
+.search-form .text-input::-moz-placeholder {
+  color: white;
+}
+.search-form .text-input:-ms-input-placeholder {
+  color: white;
+}
+.search-form .text-input::placeholder {
+  color: white;
 }
 .search-form .submit-button {
   font-size: 26px;
@@ -722,7 +731,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   z-index: 100;
 }
 
-@media screen and (max-width: 1300px) {
+@media sceen and (max-width: 1300px) {
   .first_search {
     display: none;
   }
@@ -883,9 +892,9 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     font-size: 20px;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .twitch-head {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 @media (max-width: 990px) {
