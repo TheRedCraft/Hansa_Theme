@@ -8,6 +8,8 @@
     <?php wp_head(); ?> <!--standard head von wordpress einbinden/laden-->
     <script src="/wp-content/themes/Hansa_Theme-master/calender.js"></script> <!--wichtigste zuerst gebrauchte scripte laden/einbinde-->
     <script src="/wp-content/themes/Hansa_Theme-master/main.js"></script>
+    <script src="./wordpress/wp-content/themes/Hansa_Theme-master/main.js"></script> <!--wichtigste zuerst gebrauchte scripte laden/einbinde-->
+    <script src="/wordpress/wp-content/themes/Hansa_Theme-master/main.js"></script>
 </head>
 <body onload="searchgrid()"> <!--Wenn seite geladen ist grid für die Twitch-Boxen erstellen-->
     <?php

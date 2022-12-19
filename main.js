@@ -94,12 +94,7 @@ function make_Oberstufe() {
   let Trennung_1 = Seiten_inhalt.split(Kachlen_einfüge_zeichen); //Seite bei Trennzeichen in array trenen
 
  
-	/*padding: 0 5vw 0 5vw;
-	margin-top: 10vh;
-	display: grid;
-	grid-template-columns: 30vw 30vw 30vw;
-	row-gap: 10vh;
-*/
+
 
   document.querySelector('.twitch-boxen').style.padding = "0 5vw 0 5vw";
   document.querySelector('.twitch-boxen').style.marginTop = "10vh";
