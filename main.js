@@ -93,7 +93,20 @@ function make_Oberstufe() {
 
   let Trennung_1 = Seiten_inhalt.split(Kachlen_einfüge_zeichen); //Seite bei Trennzeichen in array trenen
 
+ 
+	/*padding: 0 5vw 0 5vw;
+	margin-top: 10vh;
+	display: grid;
+	grid-template-columns: 30vw 30vw 30vw;
+	row-gap: 10vh;
+*/
 
+  document.querySelector('.twitch-boxen').style.padding = "0 5vw 0 5vw";
+  document.querySelector('.twitch-boxen').style.marginTop = "10vh";
+  document.querySelector('.twitch-boxen').style.display = "grid";
+  document.querySelector('.twitch-boxen').style.gridTemplateColumns = "30vw 30vw 30vw";
+  document.querySelector('.twitch-boxen').style.rowGap = "10vh";
+  
   document.querySelector('.twitch-boxen').id = "todelete"; //aktuelle Twitch boxen id löschen geben
   Neue_seite = Trennung_1[0] + '<div class="twitch-boxen" style="grid-template-rows: 30vw; margin-left: -15vw">' + document.querySelector('.twitch-boxen').innerHTML + '</div>' + Trennung_1[1] //Neue Seite zusammensetzen
 

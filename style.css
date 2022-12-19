@@ -177,14 +177,6 @@ a {
   row-gap: 10vh;
 }
 
-.twitch-boxen-oberstufe {
-  padding: 0 5vw 0 5vw;
-  margin-top: 10vh;
-  display: grid;
-  grid-template-columns: 30vw 30vw 30vw;
-  row-gap: 10vh;
-}
-
 /*Ende Twitch Box*/
 .hansa-motto-overlay {
   display: flex;
@@ -853,13 +845,6 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     width: 50vw;
   }
   .twitch-boxen {
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 4vh;
-  }
-  .twitch-boxen-oberstufe {
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
