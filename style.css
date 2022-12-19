@@ -177,6 +177,14 @@ a {
   row-gap: 10vh;
 }
 
+.twitch-boxen-oberstufe {
+  padding: 0 5vw 0 5vw;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  row-gap: 10vh;
+}
+
 /*Ende Twitch Box*/
 .hansa-motto-overlay {
   display: flex;
@@ -462,76 +470,49 @@ a {
   width: 100vw;
 }
 
-.wichtig-post-box-new-style .wichtig-col1 * {
-  text-decoration: none;
-}
-
 .wichtig-post-box-new-style {
   width: 80vw;
-  height: 80vh;
+  height: 120vh;
   padding: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none !important;
+  background-color: orange;
 }
-.wichtig-post-box-new-style .wichtig-col1 {
-  text-decoration: none !important;
-  background-color: #FCBE6E;
-  overflow: hidden;
-  height: 60%;
-  width: 40%;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 5%;
-  z-index: 10;
-}
-.wichtig-post-box-new-style .wichtig-col1 .wichtig-post-new-syle-heading {
-  text-decoration: none !important;
-}
-.wichtig-post-box-new-style .wichtig-col1 .wichtig-content-div {
-  text-decoration: none !important;
-  height: 60%;
-  overflow: hidden;
-  padding-bottom: 16px;
-}
-.wichtig-post-box-new-style .wichtig-col1 * {
-  background-color: #FCBE6E !important;
-  color: black;
-}
-.wichtig-post-box-new-style .wichtig-col1 * a {
-  text-decoration: none;
-}
-.wichtig-post-box-new-style .wichtig-col1 * .see-more {
-  text-decoration: none;
-  padding-top: 16px;
-  margin-top: 100%;
-  position: relative;
-  bottom: 0px;
-}
-.wichtig-post-box-new-style .wichtig-col1 * .see-more:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.wichtig-post-box-new-style .wichtig-col2 {
-  height: 90%;
-  width: 40%;
-  position: relative;
-  /*top: 100px;*/
-  margin: 0;
-  z-index: 100;
-  padding-left: -100;
+.wichtig-post-box-new-style .wichtig-anker {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 70%;
 }
-.wichtig-post-box-new-style .wichtig-col2 img {
+.wichtig-post-box-new-style .wichtig-thumbnail {
   width: 80%;
-  height: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+.wichtig-post-box-new-style .wichtig-thumbnail img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.wichtig-post-box-new-style .wichtig-post-new-style-content {
+  height: 60vh;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.wichtig-post-box-new-style .wichtig-post-weiterlesen-button {
+  margin-top: 10px;
+  background-color: #2959c5;
+  color: white;
+  padding: 6px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 /*Footer begin*/
@@ -731,7 +712,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   z-index: 100;
 }
 
-@media sceen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .first_search {
     display: none;
   }
@@ -878,6 +859,13 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     align-items: center;
     row-gap: 4vh;
   }
+  .twitch-boxen-oberstufe {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4vh;
+  }
   .section-heading {
     font-size: 40px;
   }
@@ -918,6 +906,9 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   }
 }
 @media (max-width: 900px) {
+  .wichtig-post-box-new-style .wichtig-anker {
+    width: 90%;
+  }
   #menu-header-menu {
     height: auto;
     overflow-y: scroll;

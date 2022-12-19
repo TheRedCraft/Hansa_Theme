@@ -72,7 +72,7 @@ if ($falafel == 'true')
 
     if($loop->have_posts())
     {
-      echo "<div class='twitch-boxen'>";
+      echo "<div class='twitch-boxen-oberstufe'>";
       while($loop->have_posts())
       {
         $loop->the_post();
