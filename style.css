@@ -704,6 +704,16 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
   z-index: 100;
 }
 
+.t_boxen_oberstufe {
+  grid-template-rows: 30vw;
+  margin-left: -10vw;
+  padding: 0 5vw 0 5vw;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  row-gap: 10vh;
+}
+
 @media screen and (max-width: 1300px) {
   .first_search {
     display: none;
@@ -850,6 +860,7 @@ nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .su
     flex-direction: column;
     align-items: center;
     row-gap: 4vh;
+    margin-left: 0;
   }
   .section-heading {
     font-size: 40px;
