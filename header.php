@@ -15,7 +15,7 @@
     <?php
       echo "<div class='first_menu'>"; //Header Menü und Menü-Bar + Search und co. einbinden
       echo "<div class='hansa-icon-div'>";
-      echo "<a href='/'><img style='object-fit: cover;' src='http://www.hansa-gymnasium.de/wp-content/uploads/2022/09/cropped-Hansa-Logo-Transparent-Weiss-4-768x447.png'></a>";
+      echo "<a href='/'><img style='object-fit: cover;' src='/wp-content/uploads/2022/09/cropped-Hansa-Logo-Transparent-Weiss-4-768x447.png'></a>";
       echo "</div>";
     ?>
 

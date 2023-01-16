@@ -464,7 +464,7 @@ a {
 
 .wichtig-post-box-new-style {
   width: 80vw;
-  height: 120vh;
+  height: 50vh;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -477,8 +477,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 40vh;
   width: 70%;
+  text-decoration: none;
 }
 .wichtig-post-box-new-style .wichtig-thumbnail {
   width: 80%;

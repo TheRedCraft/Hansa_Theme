@@ -24,9 +24,6 @@ if($wichtigLoop->have_posts()) //Twitch box für den wichtig post erstellen
     the_title('<h2>', '</h2>');
     echo "</div>";
     echo "<a class='wichtig-anker' href='".get_the_permalink()."'>";
-    echo "<div class='wichtig-thumbnail'>";
-    the_post_thumbnail();
-    echo "</div>";
     echo "<div class='wichtig-post-new-style-content'>";
     the_content();
     echo "</div>";
