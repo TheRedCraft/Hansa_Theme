@@ -651,39 +651,161 @@ nav {
 .menu-item {
 	font-size: 24px;
 }
-nav ul > .menu-item-has-children:hover > .sub-menu {
-	display: block;
-	height: auto;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background-color: white;
-	border: 1px solid lightgray;
-	margin: 0;
-	padding: 10px;
-	min-width: 200px;
-	list-style-type: none;
-	border-radius: 10px;
-	z-index: 999;
-	box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
-	a {
-		color: black;
-		padding: .25rem;
-		text-align: left;
+@media screen and (min-width: 1300px) {
+	nav ul > .menu-item-has-children:hover > .sub-menu {
 		display: block;
-		text-decoration: none;
-		&:hover {
-			color: $prime;
+		height: auto;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: rgba(0,0,0,0);
+		border: none;
+		margin-left: -20px;
+		padding: 0;
+		padding-top: 20px;
+		min-width: 200px;
+		list-style-type: none;
+		border-radius: 3px;
+		z-index: 999;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 30px;
+			border-bottom: 20px solid orange;
+			border-bottom-color: inherit; 
+			border-right: 20px solid transparent;
+			border-left: 20px solid transparent;
+			color: orange;
+		}
+		a {
+			color: white;
+			margin: 0;
+			padding: 12px;
+			text-align: left;
+			display: block;
+			text-decoration: none;
+			background-color: orange;
+			&:hover {
+				background-color: $prime;
+			}
+		}
+	}
+	nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu{
+		display: block;
+		left: 100%;
+		padding: 0;
+		padding-top: 0;
+		padding-left: 20px !important;
+		background-color: rgba(0,0,0,0);
+		min-width: 100%;
+		top: 0;
+		a {
+			background-color: red;
+			&:hover {
+				background-color: $prime;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: -20px;
+			border-right: 20px solid red;
+			border-right-color: inherit; 
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			color: red;
 		}
 	}
 }
 
-nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu{
-	display: block;
-	left: 100%;
-	top: 0;
+@media screen and (max-width: 1300px) {
+	nav ul > .menu-item-has-children:hover > .sub-menu {
+		display: block;
+		height: auto;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: rgba(0,0,0,0);
+		border: none;
+		margin-left: 20px;
+		padding: 0;
+		padding-top: 20px;
+		min-width: 200px;
+		list-style-type: none;
+		border-radius: 3px;
+		z-index: 999;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 30px;
+			border-bottom: 20px solid orange;
+			border-bottom-color: inherit; 
+			border-right: 20px solid transparent;
+			border-left: 20px solid transparent;
+			color: orange;
+		}
+		a {
+			color: white;
+			margin: 0;
+			padding: 12px;
+			text-align: left;
+			display: block;
+			text-decoration: none;
+			background-color: orange;
+			&:hover {
+				background-color: $prime;
+			}
+		}
+	}
+	nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu{
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		direction: rtl !important;
+		padding: 0;
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 20px !important;
+		background-color: rgba(0,0,0,0);
+		min-width: 100%;
+		top: 0;
+		margin-right: 0;
+		a {
+			position: relative;
+			direction: rtl !important;
+			background-color: red;
+			min-width: 100%;
+			width: fit-content;
+			min-height: 30px;
+			height: fit-content;
+			&:hover {
+				background-color: $prime;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 5px;
+			transform: scaleX(-1);
+			left: 90%;
+			border-right: 20px solid red;
+			border-right-color: inherit; 
+			border-bottom: 20px solid transparent;
+			border-top: 20px solid transparent;
+			color: red;
+		}
+		> * {
+			direction: rtl !important;
+		}
+	}
+	nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children > .sub-menu{
+		direction: rtl !important;
+		right: 100%;
+	}
 }
-
 .hansa-icon-div {
 	position: absolute;
 	a {
