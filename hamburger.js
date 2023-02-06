@@ -12,7 +12,7 @@ function make_hamburger() { //Hamburger erstellen/formatieren
   hamburger = document.querySelector('.hamburger')
   navMenu = document.querySelector('.menu-header-menu-container')
   nav = document.querySelector('nav');
-  hamburger.addEventListener('click', () => {
+  hamburger.addEventListener("click", () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
     navMenu.classList.toggle('notActive');
@@ -53,7 +53,7 @@ function make_hamburger() { //Hamburger erstellen/formatieren
 
     has_childes[i].querySelector('.sub-menu').innerHTML += a_as_childes2;
     
-    has_childes[i].addEventListener('click', function() {
+    has_childes[i].addEventListener("click", function() {
       let has_childes_child_nodes = this.querySelectorAll('.sub-menu')
       for(e = 0; e < has_childes_child_nodes.length; e++) {
 
@@ -79,7 +79,7 @@ if ("ontouchstart" in document.documentElement) // wenn das display touch ist ha
   hamburger = document.querySelector('.hamburger')
   navMenu = document.querySelector('.menu-header-menu-container')
   nav = document.querySelector('nav');
-  hamburger.addEventListener('click', () => {
+  hamburger.addEventListener("click", () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
     navMenu.classList.toggle('notActive');
@@ -120,7 +120,7 @@ if ("ontouchstart" in document.documentElement) // wenn das display touch ist ha
 
     has_childes[i].querySelector('.sub-menu').innerHTML += a_as_childes2;
     
-    has_childes[i].addEventListener('click', function() {
+    has_childes[i].addEventListener("click", function() {
       let has_childes_child_nodes = this.querySelectorAll('.sub-menu')
       for(e = 0; e < has_childes_child_nodes.length; e++) {
 

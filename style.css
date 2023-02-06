@@ -464,7 +464,7 @@ a {
 
 .wichtig-post-box-new-style {
   width: 80vw;
-  height: 50vh;
+  height: 65vh;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -477,7 +477,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 45vh;
   width: 70%;
   text-decoration: none;
 }
@@ -852,6 +852,9 @@ nav .sub-menu li .sub-menu {
     left: -100%;
     top: 0;
   }
+  .sub-menu:has {
+    left: -100px !important;
+  }
 }
 @media screen and (max-width: 1200px) {
   .wichtig-content-div {
@@ -1216,11 +1219,16 @@ nav .sub-menu li .sub-menu {
   .sub-menu {
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0);
   }
   .menu-item {
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  a {
+    background-color: rgba(0, 0, 0, 0) !important;
   }
   .first_menu {
     display: flex;
@@ -1311,7 +1319,7 @@ nav .sub-menu li .sub-menu {
     width: 100vw;
     text-align: left;
   }
-  nav ul > .menu-item-has-children:hover > .sub-menu {
+  nav ul > .menu-item-has-children > .sub-menu {
     display: block;
     height: auto;
     position: relative;
@@ -1328,7 +1336,7 @@ nav .sub-menu li .sub-menu {
     z-index: 999;
     text-align: left;
   }
-  nav ul > .menu-item-has-children:hover > .sub-menu a {
+  nav ul > .menu-item-has-children > .sub-menu a {
     color: white;
     padding: 0.25rem 3rem;
     text-align: left;
@@ -1336,7 +1344,7 @@ nav .sub-menu li .sub-menu {
     text-decoration: none;
     overflow-x: visible;
   }
-  nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
+  nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children > .sub-menu {
     display: block;
     left: 0;
     top: 0;
@@ -1344,5 +1352,17 @@ nav .sub-menu li .sub-menu {
   .first_search {
     position: absolute;
     right: 85px;
+  }
+  .sub-menu .sub-menu {
+    direction: ltr !important;
+  }
+  .sub-menu .sub-menu .menu-item {
+    margin-left: 30px !important;
+  }
+  * {
+    direction: ltr !important;
+  }
+  .sub-menu .sub-menu li a {
+    margin-left: 30px !important;
   }
 }/*# sourceMappingURL=style.css.map */
