@@ -8,12 +8,14 @@
     <?php wp_head(); ?> <!--standard head von wordpress einbinden/laden-->
     <script src="/wp-content/themes/Hansa_Theme-master/calender.js"></script> <!--wichtigste zuerst gebrauchte scripte laden/einbinde-->
     <script src="/wp-content/themes/Hansa_Theme-master/main.js"></script>
+    <script src="./wordpress/wp-content/themes/Hansa_Theme-master/main.js"></script> <!--wichtigste zuerst gebrauchte scripte laden/einbinde-->
+    <script src="/wordpress/wp-content/themes/Hansa_Theme-master/main.js"></script>
 </head>
 <body onload="searchgrid()"> <!--Wenn seite geladen ist grid für die Twitch-Boxen erstellen-->
     <?php
       echo "<div class='first_menu'>"; //Header Menü und Menü-Bar + Search und co. einbinden
       echo "<div class='hansa-icon-div'>";
-      echo "<a href='/'><img style='object-fit: cover;' src='http://www.hansa-gymnasium.de/wp-content/uploads/2022/09/cropped-Hansa-Logo-Transparent-Weiss-4-768x447.png'></a>";
+      echo "<a href='/'><img style='object-fit: cover;' src='/wp-content/uploads/2022/09/cropped-Hansa-Logo-Transparent-Weiss-4-768x447.png'></a>";
       echo "</div>";
     ?>
 

@@ -93,9 +93,11 @@ function make_Oberstufe() {
 
   let Trennung_1 = Seiten_inhalt.split(Kachlen_einfüge_zeichen); //Seite bei Trennzeichen in array trenen
 
-
+ 
   document.querySelector('.twitch-boxen').id = "todelete"; //aktuelle Twitch boxen id löschen geben
-  Neue_seite = Trennung_1[0] + '<div class="twitch-boxen" style="grid-template-rows: 30vw; margin-left: -15vw">' + document.querySelector('.twitch-boxen').innerHTML + '</div>' + Trennung_1[1] //Neue Seite zusammensetzen
+  Neue_seite = Trennung_1[0] + '<div class="twitch-boxen t_boxen_oberstufe" style="grid-template-rows: 30vw 30vw;">' + document.querySelector('.twitch-boxen').innerHTML + '</div>' + Trennung_1[1] //Neue Seite zusammensetzen
+
+
 
   document.querySelector('.single-post-content').innerHTML = Neue_seite; //Zusammengestze Seite einfügen
   document.getElementById('todelete').remove(); //allte Twitch boxen löschen

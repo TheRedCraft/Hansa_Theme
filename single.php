@@ -2,8 +2,8 @@
 
 <?php
 
-$falafel;
-$banana;
+$oberstufe;
+$termine;
 
 
 if(have_posts())
@@ -13,15 +13,15 @@ if(have_posts())
       the_post();
       echo "<div class='single-post-thumbnail-div' style='background-image: url(".get_the_post_thumbnail_url().")'></div>";
       if(get_the_title() == 'Oberstufe'){
-        $falafel = 'true';
+        $oberstufe = 'true';
       }
       else {
-        $falafel = 'false';
+        $obersufe = 'false';
       }
       if(get_the_title() == 'Termine') {
-        $banana = 'true';
+        $termine = 'true';
       } else {
-        $banana = 'false';
+        $termine = 'false';
       }
         echo "<div class='single-post'>";
         the_title('<h2 class="single-post-heading">', '</h2>');
@@ -32,7 +32,7 @@ if(have_posts())
     }
 }
 
-if ($banana == 'true') {
+if ($termine == 'true') {
   echo "<div class='calender-box'>";
   echo "<div class='calender-buttons'>";
   echo "<button onclick='beforeMonth()'>Vorheriger Monat</button>";
@@ -59,7 +59,7 @@ if ($banana == 'true') {
   echo "<script>makeCalenderData();makeCalender();</script>";
 }
 
-if ($falafel == 'true')
+if ($oberstufe == 'true')
   {
     wp_reset_postdata();
     $args = array(
