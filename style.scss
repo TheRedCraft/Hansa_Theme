@@ -34,6 +34,8 @@ a {
 
 $slider-height: 100vh;
 $slider-prime: #3660E3;
+$orange: orange;
+$red: #3660E3;
 .slider{
     width: 100vw;
     height: $slider-height;  
@@ -481,7 +483,7 @@ $clr-background: var(--clr-background);
 		border: 1px solid white;
 		border-radius: 100px;
 		color: white;
-		background-color: #FCBE6E;
+		background-color: $orange;
 		padding: 0 10px;
 	}
 }
@@ -672,11 +674,11 @@ nav {
 			position: absolute;
 			top: 0;
 			left: 30px;
-			border-bottom: 20px solid orange;
+			border-bottom: 20px solid $orange;
 			border-bottom-color: inherit; 
 			border-right: 20px solid transparent;
 			border-left: 20px solid transparent;
-			color: orange;
+			color: $orange;
 		}
 		a {
 			color: white;
@@ -685,7 +687,7 @@ nav {
 			text-align: left;
 			display: block;
 			text-decoration: none;
-			background-color: orange;
+			background-color: $orange;
 			&:hover {
 				background-color: $prime;
 			}
@@ -701,7 +703,7 @@ nav {
 		min-width: 100%;
 		top: 0;
 		a {
-			background-color: red;
+			background-color: $red;
 			&:hover {
 				background-color: $prime;
 			}
@@ -711,11 +713,11 @@ nav {
 			position: absolute;
 			top: 5px;
 			left: -20px;
-			border-right: 20px solid red;
+			border-right: 20px solid $red;
 			border-right-color: inherit; 
 			border-top: 20px solid transparent;
 			border-bottom: 20px solid transparent;
-			color: red;
+			color: $red;
 		}
 	}
 }
@@ -741,11 +743,11 @@ nav {
 			position: absolute;
 			top: 0;
 			left: 30px;
-			border-bottom: 20px solid orange;
+			border-bottom: 20px solid $orange;
 			border-bottom-color: inherit; 
 			border-right: 20px solid transparent;
 			border-left: 20px solid transparent;
-			color: orange;
+			color: $orange;
 		}
 		a {
 			color: white;
@@ -754,7 +756,7 @@ nav {
 			text-align: left;
 			display: block;
 			text-decoration: none;
-			background-color: orange;
+			background-color: $orange;
 			&:hover {
 				background-color: $prime;
 			}
@@ -776,7 +778,7 @@ nav {
 		a {
 			position: relative;
 			direction: rtl !important;
-			background-color: red;
+			background-color: $red;
 			min-width: 100%;
 			width: fit-content;
 			min-height: 30px;
@@ -791,11 +793,11 @@ nav {
 			top: 5px;
 			transform: scaleX(-1);
 			left: 90%;
-			border-right: 20px solid red;
+			border-right: 20px solid $red;
 			border-right-color: inherit; 
 			border-bottom: 20px solid transparent;
 			border-top: 20px solid transparent;
-			color: red;
+			color: $red;
 		}
 		> * {
 			direction: rtl !important;
