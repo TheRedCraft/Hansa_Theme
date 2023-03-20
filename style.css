@@ -612,7 +612,9 @@ nav .sub-menu li .sub-menu {
 .menu-item {
   font-size: 24px;
 }
-
+.sub-menu {
+  overflow-y: scroll;
+}
 @media screen and (min-width: 1300px) {
   nav ul > .menu-item-has-children:hover > .sub-menu {
     display: block;
