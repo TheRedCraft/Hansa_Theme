@@ -719,7 +719,7 @@ nav .sub-menu li .sub-menu {
     background-color: orange;
   }
   nav ul > .menu-item-has-children:hover > .sub-menu a:hover {
-    background-color: #2959c5;
+    background-color: orange;
   }
   nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
     position: absolute;
