@@ -607,7 +607,6 @@ nav a:hover {
 nav .sub-menu li .sub-menu {
   left: 100%;
   top: 0;
-  overflow-y: scroll;
 }
 
 .menu-item {
@@ -720,7 +719,7 @@ nav .sub-menu li .sub-menu {
     background-color: orange;
   }
   nav ul > .menu-item-has-children:hover > .sub-menu a:hover {
-    background-color: orange;
+    background-color: #2959c5;
   }
   nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
     position: absolute;
