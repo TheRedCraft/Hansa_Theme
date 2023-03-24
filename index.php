@@ -54,7 +54,7 @@ $args = array( //Argumente für die News Posts
 
 $loop = new WP_Query($args);
 
-if($loop->have_posts()) //News Posts laden und richtig einfügen 
+if($loop->have_posts()) //News Posts laden und richtig einfügen
 {
   echo "<div class='twitch-boxen'>";
   while($loop->have_posts())
@@ -64,6 +64,10 @@ if($loop->have_posts()) //News Posts laden und richtig einfügen
     echo "<div class='twitch-box'>";
     echo "<div class='content'>";
     the_post_thumbnail();
+    echo "<div class='twitch-box-date'>";
+    echo get_post_custom_values('date')[0];
+    // the_date('d M Y');
+    echo "</div>";
     the_title('<h2 class="twitch-head">', '</h2>');
     echo "</div>";
     echo "<div class='twitch-border-effect'>";
