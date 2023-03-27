@@ -7,9 +7,6 @@ function enqueue_styles() //CSS Datei einbinden
 
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
-add_action( 'pre_get_posts', function( $query ) {
-  });
-
 add_action("wp_enqueue_scripts", "enqueue_styles");
 
 /*
