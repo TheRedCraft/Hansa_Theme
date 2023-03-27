@@ -10,8 +10,6 @@ get_header(); ?>
 
 <?php
 
-
-
 if(have_posts())
 {
     echo "<div style=' margin-left: 5vw; height: 20vh; width: 100%;'></div>";

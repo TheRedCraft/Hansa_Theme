@@ -16,6 +16,10 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+.twitch-head {
+	font-size: 16px;
+}
+
 /*Anfang Slider*/
 html, body {
 	overflow-x: hidden;
@@ -1413,7 +1417,7 @@ nav {
 }
 @media (max-width: 990px) {
 	.twitch-head {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 850px) {
