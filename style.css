@@ -15,6 +15,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.twitch-head {
+  font-size: 16px;
+}
+
 /*Anfang Slider*/
 html, body {
   overflow-x: hidden;
@@ -171,7 +175,7 @@ a {
 
 .twitch-boxen {
   padding: 0 5vw 0 5vw;
-  margin-top: 10vh;
+  margin-top: 0;
   display: grid;
   grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
   row-gap: 10vh;
@@ -190,7 +194,7 @@ a {
 }
 .hansa-motto-overlay h2 {
   color: white;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
 }
 .hansa-motto-overlay p {
@@ -204,7 +208,7 @@ a {
   position: relative;
   font-size: 60px;
   margin-left: 10vh;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 .footer {
@@ -213,7 +217,7 @@ a {
   background-color: #333;
   display: flex;
   align-items: center;
-  margin-top: 50vh;
+  margin-top: 10vh;
 }
 
 .footer a {
@@ -457,6 +461,7 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
+  margin-top: 10vh;
 }
 
 .wichtig-post-box-new-style {
@@ -607,7 +612,6 @@ nav a:hover {
 nav .sub-menu li .sub-menu {
   left: 100%;
   top: 0;
-  overflow-y: scroll;
 }
 
 .menu-item {
@@ -720,7 +724,7 @@ nav .sub-menu li .sub-menu {
     background-color: orange;
   }
   nav ul > .menu-item-has-children:hover > .sub-menu a:hover {
-    background-color: orange;
+    background-color: #2959c5;
   }
   nav ul .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
     position: absolute;
@@ -915,8 +919,8 @@ nav .sub-menu li .sub-menu {
     line-height: 30px;
   }
   .twitch-box {
-    width: 50vw;
-    height: 77vw;
+    width: 80vw;
+    height: 123.2vw;
     position: relative;
     margin-bottom: 4vh;
   }
@@ -976,54 +980,26 @@ nav .sub-menu li .sub-menu {
     transform: translate(-0.5rem, -0.5rem) scale(1);
   }
   .twitch-box .content img {
-    height: 50vw;
-    width: 50vw;
+    height: 80vw;
+    width: 80vw;
   }
   .twitch-boxen {
-    margin-top: 10vh;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 4vh;
     margin-left: 0;
   }
+  .twitch-boxen-wichtig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    margin-top: 10vh;
+  }
   .section-heading {
     font-size: 40px;
-  }
-}
-@media (max-width: 520px) {
-  .twitch-head {
-    font-size: 18px;
-  }
-}
-@media (max-width: 1340px) {
-  .twitch-head {
-    font-size: 20px;
-  }
-}
-@media (max-width: 1100px) {
-  .twitch-head {
-    font-size: 18px;
-  }
-}
-@media (max-width: 990px) {
-  .twitch-head {
-    font-size: 17px;
-  }
-}
-@media (max-width: 530px) {
-  .auszeichnungen {
-    display: none;
-  }
-}
-@media (max-width: 330px) {
-  .twitch-head {
-    font-size: 15px;
-  }
-}
-@media (max-width: 260px) {
-  .twitch-head {
-    font-size: 13px;
   }
 }
 @media (max-width: 900px) {
@@ -1159,6 +1135,9 @@ nav .sub-menu li .sub-menu {
   }
 }
 @media (cursor: none), (cursor: coarse), (hover: none), screen and (max-width: 600px) {
+  .twitch-head {
+    font-size: 36px;
+  }
   .first_search {
     display: block;
     position: absolute;
@@ -1324,5 +1303,48 @@ nav .sub-menu li .sub-menu {
   }
   .sub-menu .sub-menu li a {
     margin-left: 30px !important;
+  }
+}
+@media (max-width: 1340px) {
+  .twitch-head {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .twitch-head {
+    font-size: 14px;
+  }
+}
+@media (max-width: 990px) {
+  .twitch-head {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .twitch-head {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .twitch-head {
+    font-size: 32px;
+  }
+}
+@media (max-width: 530px) {
+  .auszeichnungen {
+    display: none;
+  }
+  .twitch-head {
+    font-size: 22px;
+  }
+}
+@media (max-width: 330px) {
+  .twitch-head {
+    font-size: 20px;
+  }
+}
+@media (max-width: 260px) {
+  .twitch-head {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

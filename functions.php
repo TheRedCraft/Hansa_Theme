@@ -5,7 +5,13 @@ function enqueue_styles() //CSS Datei einbinden
     wp_enqueue_style('main', get_template_directory_uri() . '/style.css');
 }
 
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+
 add_action("wp_enqueue_scripts", "enqueue_styles");
+
+function custom_post_type_archive( $query ) {
+}
+add_action( 'pre_get_posts', 'custom_post_type_archive' );
 
 /*
 function make_nav_menu()
