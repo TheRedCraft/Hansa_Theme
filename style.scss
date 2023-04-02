@@ -1080,6 +1080,9 @@ nav {
 		right: 85px;
 	}
 }
+.side-menu {
+	display: none;
+}
 // mobile media tag
 @media (cursor:none), (cursor:coarse), (hover:none), screen and (max-width: 900px) {
 	.twitch-head {

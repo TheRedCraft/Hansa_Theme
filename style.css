@@ -1011,6 +1011,10 @@ nav .sub-menu li .sub-menu {
     right: 85px;
   }
 }
+.side-menu {
+  display: none;
+}
+
 @media (cursor: none), (cursor: coarse), (hover: none), screen and (max-width: 900px) {
   .twitch-head {
     font-size: 16px;
