@@ -19,6 +19,10 @@
       echo "</div>";
     ?>
 
+<input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    
+
             <nav>
                 <?php //alle menü-items fürs header menü einfügen
 
@@ -31,11 +35,11 @@
                 ?>
             </nav>
 
-            <div class="hamburger"> <!--Hamburger Menü einbinden-->
+            <!-- <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
-            </div>
+            </div> -->
             <?php 
             
             echo "<div class='first_search'>"; //Search-Bar div hinzufügne
