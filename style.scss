@@ -1161,8 +1161,10 @@ nav {
 	nav{
 		.sub-menu {
 			direction: ltr !important;
+			list-style-type: disc !important;
 		}
 		* {
+			font-family: 'Poppins', sans-serif !important;
 			display: flex !important;
 			flex-direction: column !important;
 			direction: ltr !important;
@@ -1171,6 +1173,7 @@ nav {
 				color: white !important;
 				&:hover {
 					text-decoration: underline !important;
+					color: lightgray !important;
 				}
 			}
 		}
@@ -1193,15 +1196,15 @@ nav {
 			}
 		}
 		* {
-			list-style-type: none !important;
-			background-color: orange !important;
+			list-style-type: disc !important;
+			background-color: #222 !important;
 			padding: 10px 0 10px 0 !important;
 			* > * > * > * {
 				margin: 0 5px 0 10px !important;
 				padding: 10px 0 10px 0 !important;
 				background-color: $prime !important;
 				* > * {
-					background-color: orange !important;
+					background-color: #222 !important;
 				}
 			}
 		}

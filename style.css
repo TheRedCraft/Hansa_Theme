@@ -1099,8 +1099,10 @@ nav .sub-menu li .sub-menu {
   }
   nav .sub-menu {
     direction: ltr !important;
+    list-style-type: disc !important;
   }
   nav * {
+    font-family: "Poppins", sans-serif !important;
     display: flex !important;
     flex-direction: column !important;
     direction: ltr !important;
@@ -1111,6 +1113,7 @@ nav .sub-menu li .sub-menu {
   }
   nav * a:hover {
     text-decoration: underline !important;
+    color: lightgray !important;
   }
   nav > * {
     height: 24px !important;
@@ -1119,8 +1122,8 @@ nav .sub-menu li .sub-menu {
     margin-left: 10px !important;
   }
   nav * {
-    list-style-type: none !important;
-    background-color: orange !important;
+    list-style-type: disc !important;
+    background-color: #222 !important;
     padding: 10px 0 10px 0 !important;
   }
   nav * * > * > * > * {
@@ -1129,7 +1132,7 @@ nav .sub-menu li .sub-menu {
     background-color: #2959c5 !important;
   }
   nav * * > * > * > * * > * {
-    background-color: orange !important;
+    background-color: #222 !important;
   }
   .side-menu:checked ~ nav {
     left: 0 !important;
