@@ -1094,7 +1094,7 @@ nav .sub-menu li .sub-menu {
     overflow-y: scroll !important;
     top: 0 !important;
     position: absolute !important;
-    background-color: #222 !important;
+    background-color: #333 !important;
     width: 100vw !important;
   }
   nav .sub-menu {
@@ -1123,7 +1123,7 @@ nav .sub-menu li .sub-menu {
   }
   nav * {
     list-style-type: disc !important;
-    background-color: #222 !important;
+    background-color: #333 !important;
     padding: 10px 0 10px 0 !important;
   }
   nav * * > * > * > * {
@@ -1132,7 +1132,7 @@ nav .sub-menu li .sub-menu {
     background-color: #2959c5 !important;
   }
   nav * * > * > * > * * > * {
-    background-color: #222 !important;
+    background-color: #333 !important;
   }
   .side-menu:checked ~ nav {
     left: 0 !important;

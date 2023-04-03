@@ -1187,7 +1187,7 @@ nav {
 		overflow-y: scroll !important;
 		top: 0 !important;
 		position: absolute !important;
-		background-color: #222 !important;
+		background-color: #333 !important;
 		width: 100vw !important;
 		> * {
 			height: 24px !important;
@@ -1197,14 +1197,14 @@ nav {
 		}
 		* {
 			list-style-type: disc !important;
-			background-color: #222 !important;
+			background-color: #333 !important;
 			padding: 10px 0 10px 0 !important;
 			* > * > * > * {
 				margin: 0 5px 0 10px !important;
 				padding: 10px 0 10px 0 !important;
 				background-color: $prime !important;
 				* > * {
-					background-color: #222 !important;
+					background-color: #333 !important;
 				}
 			}
 		}
