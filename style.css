@@ -1127,7 +1127,7 @@ nav .sub-menu li .sub-menu {
     padding: 10px 0 10px 0 !important;
   }
   nav * * > * > * > * {
-    margin: 0 5px 0 10px !important;
+    margin: 0 20px 5px 30px !important;
     padding: 10px 0 10px 0 !important;
     background-color: #2959c5 !important;
   }
