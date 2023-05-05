@@ -1116,19 +1116,19 @@ nav .sub-menu li .sub-menu {
     color: lightgray !important;
   }
   nav > * {
-    height: 24px !important;
+    height: 16px !important;
   }
   nav > * > * > * {
-    margin-left: 10px !important;
+    margin-left: 5px !important;
   }
   nav * {
     list-style-type: disc !important;
     background-color: #333 !important;
-    padding: 10px 0 10px 0 !important;
+    padding: 4px 0 4px 0 !important;
   }
   nav * * > * > * > * {
-    margin: 0 20px 5px 30px !important;
-    padding: 10px 0 10px 0 !important;
+    margin: 0 10px 2px 15px !important;
+    padding: 5px 0 5px 0 !important;
     background-color: #2959c5 !important;
   }
   nav * * > * > * > * * > * {
