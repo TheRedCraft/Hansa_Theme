@@ -16,7 +16,7 @@
 	 <br>
     <br>
     <a href="mailto: hansa-gymnasium-bergedorf@bsb.hamburg.de">	hansa-gymnasium-bergedorf(at)bsb.hamburg.de</a> 
-    <br
+    <br>
 	<br>
     Tel.: 040 – 428 93 43 0
   </p>
@@ -49,30 +49,11 @@
 </div>
 <div class="copyright-bar"><p>© Hansa-Gymnasium Bergedorf 2022. Alle Rechte vorbehalten.</p> </div> <!--Copyright-Bar-->
 <?php
-/* <!--Calender Unnötig-->
-$file = fopen("http://localhost/wordpress/wp-content/themes/Hansa_Theme/calenderimgparsed.txt","r");
-
-while(! feof($file))
-  {
-    $line = trim(fgets($file));
-    echo "<script>addToCalender('".$line."')</script>";
-  }
-
-fclose($file);
-
-Test Hallo! Test change! noch mehr changes
-
-echo "<script>alertCalender()</script>";*/
 ?>
 </body> <!--Alle unsere Scripte einbinden sowohl auf localem rechner verzeichnis als auch für die Website-->
 <script src="./wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
-<script src="./wordpress/wp-content/themes/Hansa_Theme/calender.js"></script>
 <script src="/wordpress/wp-content/themes/Hansa_Theme/main.js"></script>
-<script src="/wordpress/wp-content/themes/Hansa_Theme/calender.js"></script>
 <script src="./wordpress/wp-content/themes/Hansa_Theme-master/main.js"></script>
-<script src="./wordpress/wp-content/themes/Hansa_Theme-master/calender.js"></script>
 <script src="/wordpress/wp-content/themes/Hansa_Theme-master/main.js"></script>
-<script src="/wordpress/wp-content/themes/Hansa_Theme-master/calender.js"></script>
 <script src="/wp-content/themes/Hansa_Theme-master/main.js"></script>
-<script src="/wp-content/themes/Hansa_Theme-master/calender.js"></script>
 </html>

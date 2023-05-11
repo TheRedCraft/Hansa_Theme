@@ -10,6 +10,10 @@ get_header(); ?>
 
 <?php
 
+global $query_string;
+
+query_posts($query_string . "&posts_per_page=100");
+
 if(have_posts())
 {
     echo "<div style=' margin-left: 5vw; height: 20vh; width: 100%;'></div>";

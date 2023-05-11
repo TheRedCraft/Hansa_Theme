@@ -1109,6 +1109,7 @@ nav .sub-menu li .sub-menu {
     text-align: left !important;
   }
   nav * a {
+    cursor: pointer !important;
     color: white !important;
   }
   nav * a:hover {

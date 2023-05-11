@@ -1170,6 +1170,7 @@ nav {
 			direction: ltr !important;
 			text-align: left !important;
 			a {
+				cursor: pointer !important;
 				color: white !important;
 				&:hover {
 					text-decoration: underline !important;
