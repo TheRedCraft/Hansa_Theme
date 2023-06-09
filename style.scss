@@ -967,103 +967,6 @@ nav {
 		font-size: 20px;
 		line-height: 30px;
 	}
-	$twitch-width: 80vw;
-	$twitch-height: 123.2vw;
-	.twitch-box {
-		width: $twitch-width;
-		height: $twitch-height;
-		position: relative;
-		margin-bottom: 4vh;
-		
-		.content {
-			border: 1.5px solid lightgray;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 2;
-			width: 100%;
-			height: 100%;
-			background-color: white;
-			transition: all 200ms;
-		}
-		.twitch-border-effect {
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			width: 100%;
-			height: 100%;
-			background-color: $prime;
-	
-			.top-corner {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 0;
-				height: 0;
-				border-top: $borderSize solid transparent;
-				border-bottom: $borderSize solid transparent;
-				border-right: $borderSize solid $prime;
-				transition: all 200ms;
-				transform-origin: left top;
-				transform: translate(0, 0) scale(0);
-			}
-			.bottom-corner {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				width: 0;
-				height: 0;
-				border-bottom: $borderSize solid transparent;
-				border-right: $borderSize solid transparent;
-				border-top: $borderSize solid $prime;
-				transition: all 200ms;
-				transform-origin: center bottom;
-				transform: translate(0, 0) scale(0);
-			}
-		}
-		&:hover,
-		&:focus {
-			.content {
-				transform: translate(-$borderSize, -$borderSize);
-			}
-			.top-corner {
-				transform: translate($borderSize, 0) scale(1);
-			}
-			.bottom-corner {
-				transform: translate(-$borderSize, -$borderSize) scale(1);
-			}
-		}
-	}
-	
-	.twitch-box {
-		.content {
-			img {
-				height: $twitch-width;
-				width: $twitch-width;
-			}
-		}
-	}
-	
-	.twitch-boxen {
-		margin-top: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center; 
-		row-gap: 4vh;
-		margin-left: 0;
-	}
-	.twitch-boxen-wichtig {	
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 90vw;
-		margin-top: 10vh;
-	}
-
-	.section-heading {
-		font-size: 40px;
-	}
 }
 
 @media (max-width: 900px) {
@@ -1238,28 +1141,29 @@ nav {
 
 @media (max-width: 1340px) {
 	.twitch-head {
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
 @media (max-width: 1100px) {
 	.twitch-head {
-		font-size: 14px;
+		font-size: 13px;
 	}
 }
 @media (max-width: 990px) {
 	.twitch-head {
-		font-size: 12px;
+		font-size: 11px;
 	}
 }
 @media screen and (max-width: 850px) {
 	.twitch-head {
-		font-size: 42px;
+		font-size: 9px;
 	}
 }
 
 @media screen and (max-width: 620px) {
+
 	.twitch-head {
-		font-size: 32px;
+		font-size: 8px;
 	}
 	.single-post-heading {
 		font-size: 30px !important;
@@ -1267,11 +1171,114 @@ nav {
 }
 
 @media (max-width: 530px) {
+	.twitch-box {
+		width: 50%;
+	}
+	.twitch-head {
+		font-size: 42px;
+	}
 	.auszeichnungen {
 		display: none;
 	}
 	.twitch-head {
 		font-size: 22px;
+	}
+	$twitch-width: 80vw;
+	$twitch-height: 123.2vw;
+	.twitch-box {
+		width: $twitch-width;
+		height: $twitch-height;
+		position: relative;
+		margin-bottom: 4vh;
+		
+		.content {
+			border: 1.5px solid lightgray;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			transition: all 200ms;
+		}
+		.twitch-border-effect {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			background-color: $prime;
+	
+			.top-corner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-top: $borderSize solid transparent;
+				border-bottom: $borderSize solid transparent;
+				border-right: $borderSize solid $prime;
+				transition: all 200ms;
+				transform-origin: left top;
+				transform: translate(0, 0) scale(0);
+			}
+			.bottom-corner {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 0;
+				height: 0;
+				border-bottom: $borderSize solid transparent;
+				border-right: $borderSize solid transparent;
+				border-top: $borderSize solid $prime;
+				transition: all 200ms;
+				transform-origin: center bottom;
+				transform: translate(0, 0) scale(0);
+			}
+		}
+		&:hover,
+		&:focus {
+			.content {
+				transform: translate(-$borderSize, -$borderSize);
+			}
+			.top-corner {
+				transform: translate($borderSize, 0) scale(1);
+			}
+			.bottom-corner {
+				transform: translate(-$borderSize, -$borderSize) scale(1);
+			}
+		}
+	}
+	
+	.twitch-box {
+		.content {
+			img {
+				height: $twitch-width;
+				width: $twitch-width;
+			}
+		}
+	}
+	
+	.twitch-boxen {
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		row-gap: 4vh;
+		margin-left: 0;
+	}
+	.twitch-boxen-wichtig {	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90vw;
+		margin-top: 10vh;
+	}
+
+	.section-heading {
+		font-size: 40px;
 	}
 }
 @media (max-width: 330px) {
