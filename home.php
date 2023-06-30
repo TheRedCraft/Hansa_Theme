@@ -16,21 +16,21 @@ $wichtigLoop = new WP_Query($argsWichtig);
 if($wichtigLoop->have_posts()) //Twitch box für den wichtig post erstellen
 {
   echo "<div class='twitch-boxen twitch-boxen-wichtig'>";
-  while($wichtigLoop -> have_posts())
-  {
-    $wichtigLoop->the_post();
-    echo "<div class='wichtig-post-box-new-style'>";
-    echo "<div>";
-    the_title('<h2>', '</h2>');
-    echo "</div>";
-    echo "<a class='wichtig-anker' href='".get_the_permalink()."'>";
-    echo "<div class='wichtig-post-new-style-content'>";
-    the_content();
-    echo "</div>";
-    echo "</a>";
-    echo "<a class='wichtig-post-weiterlesen-button' href='".get_the_permalink()."'>weiterlesen</a>";
-    echo "</div>";
-  }
+    while($wichtigLoop -> have_posts())
+    {
+      $wichtigLoop->the_post();
+      echo "<div class='wichtig-post-box-new-style'>";
+        echo "<div>";
+          the_title('<h2>', '</h2>');
+        echo "</div>";
+          echo "<span class='wichtig-anker' href='".get_the_permalink()."'>"; // change to anker if needed, but makes complications with nested ankers, when ankers in wp_content();
+        echo "<div class='wichtig-post-new-style-content'>";
+          the_content();
+        echo "</div>";
+        echo "</span>";
+        echo "<a class='wichtig-post-weiterlesen-button' href='".get_the_permalink()."'>weiterlesen</a>";
+      echo "</div>";
+    }
   echo "</div>";
 }
 
