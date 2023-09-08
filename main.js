@@ -6,6 +6,7 @@ function addToCalender(line) {
 function alertCalender() {
   makeCalender(calender)
 }*/
+let stadtradeln_dings;
 
 var counter = 1; //Aktuelles Bild für Image Slider auf 1
 max_bilder = document.querySelectorAll('#SliderImage').length; //Verfügbare Image Slider bilder zählen
@@ -107,7 +108,6 @@ function make_Oberstufe() {
 
 async function make_stadtradeln_dings() {
   let the_div = document.querySelector("#stadtradeln-div");
-  let data;
   if (the_div == null) {
     return
   }
@@ -119,8 +119,132 @@ async function make_stadtradeln_dings() {
     },
   }).then((response) => response.json())
   // .then((response) => response.json()) will return a Promise, WTF JavaScript?!?
-  .then((response) => data = response)
-  the_div.innerHTML = data.kilometer;
+  .then((response) => stadtradeln_dings = response)
+  // the_div.innerHTML = data.kilometer;
 }
 
 make_stadtradeln_dings(); // TODO maybe make call from POST?
+
+
+let old = createNumberArray(0);
+
+function createNumberArray(number) {
+	let isNegativ = false;
+	// Zerlegt die Nummer in einen Array
+	const numberArray = number.toString().split('');
+	for (let i = 0; numberArray.length < 6; i++) {
+		if (numberArray[0] === '-') {
+			numberArray[0] = 0;
+			isNegativ = true;
+		}
+		numberArray.unshift(0);
+	}
+	// setzt sofern es Negativ ist ein Minus
+	if (isNegativ) {
+		numberArray.unshift('-');
+	} else {
+		numberArray.unshift('+');
+	}
+	// gibt den Array zurück
+	return numberArray.map((x) => (x === '-' || x === '+' ? x : parseInt(x)));
+}
+
+function animateNumber(number, element) {
+	// Leert das Element
+	element.innerHTML = '';
+	// Berechnet den neuen Number Array
+	const numberArray = createNumberArray(number);
+	// Legt alles in das HTML Element
+	createNumberHTML(numberArray, old, element);
+	// Berechnet die Ticks die verändert werden sollen.
+	const ticks = [...element.querySelectorAll('span[data-value]')];
+	setTimeout(() => {
+		// Animiert die Werte
+		for (let tick of ticks) {
+			let dist = parseInt(tick.getAttribute('data-value') - 1);
+			tick.style.transform = `translateY(-${dist * 100}%)`;
+		}
+	}, 0);
+	// Setzten den Zahlen Array zu dem Alten Status
+	old = numberArray;
+}
+
+function createNumberHTML(numbers, old, element) {
+	for (let i = 0; i < numbers.length; i++) {
+		if (isNaN(numbers[i]) || isNaN(old[i])) {
+			element.insertAdjacentHTML(
+				'beforeend',
+				`<span data-value="${
+					calcDeltaSight(old[i], numbers[i]).length
+				}">${calcDeltaSight(old[i], numbers[i]).join('')}</span>`
+			);
+		} else {
+			element.insertAdjacentHTML(
+				'beforeend',
+				`<span data-value="${
+					calcDeltaBetweenNumbers(old[i], numbers[i]).length
+				}">${calcDeltaBetweenNumbers(old[i], numbers[i]).join(
+					''
+				)}</span>`
+			);
+		}
+	}
+	return element;
+}
+
+function calcDeltaSight(oldSight, newSight) {
+	return oldSight !== newSight
+		? [`<span>${oldSight}</span>`, `<span>${newSight}</span>`]
+		: [`<span>${newSight}</span>`];
+}
+
+function calcDeltaBetweenNumbers(oldNumber, newNumber) {
+	let numberArray = [oldNumber];
+	let notFound = true;
+	if (oldNumber === newNumber)
+		return numberArray.map((x) => `<span>${x}</span>`);
+	while (notFound) {
+		oldNumber++;
+		if (oldNumber > 9) oldNumber = 0;
+		numberArray.push(oldNumber);
+		if (oldNumber === newNumber) notFound = false;
+	}
+	return numberArray.map((x) => `<span>${x}</span>`);
+}
+
+
+function randomNumber(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// setInterval(() => {
+// 	const diff = randomNumber(-20, 20);
+// 	const value = parseInt(old.join('')) + diff;
+// 	animateNumber(value, document.querySelector('.numbers'));
+// }, 2500);
+
+const lazyID = 'stadtradeln-div';
+const lazytargets = document.querySelectorAll(`#${lazyID}`);
+
+const lazyObserver = new IntersectionObserver((elements) => {
+	elements.forEach((element) => {
+		if (element.isIntersecting) {
+			const target = element.target;
+			triggerObserve(target);
+			lazyObserver.unobserve(target);
+		}
+	});
+});
+
+lazytargets.forEach((target) => {
+	lazyObserver.observe(target);
+});
+
+function triggerObserve() {
+  setTimeout(() => {
+    old = createNumberArray(0);
+    const diff = stadtradeln_dings.kilometer;
+    const value = parseInt(old.join('')) + diff;
+    animateNumber(value, document.querySelector('#stadtradeln-div'));
+  }, 1000);
+}
