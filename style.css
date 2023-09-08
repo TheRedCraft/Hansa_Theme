@@ -846,8 +846,8 @@ nav .sub-menu li .sub-menu {
   display: flex;
   overflow: hidden;
   align-items: center;
-  height: 5rem;
-  font-size: 5rem;
+  height: 2rem;
+  font-size: 2rem;
   margin-left: 5px;
 }
 
