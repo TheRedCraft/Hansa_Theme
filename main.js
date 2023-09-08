@@ -6,7 +6,6 @@ function addToCalender(line) {
 function alertCalender() {
   makeCalender(calender)
 }*/
-let stadtradeln_data;
 
 var counter = 1; //Aktuelles Bild für Image Slider auf 1
 max_bilder = document.querySelectorAll('#SliderImage').length; //Verfügbare Image Slider bilder zählen
@@ -108,6 +107,7 @@ function make_Oberstufe() {
 
 async function make_stadtradeln_dings() {
   let the_div = document.querySelector("#stadtradeln-div");
+  let stadt_data;
   if (the_div == null) {
     return
   }
@@ -119,13 +119,14 @@ async function make_stadtradeln_dings() {
     },
   }).then((response) => response.json())
   // .then((response) => response.json()) will return a Promise, WTF JavaScript?!?
-  .then((response) => stadtradeln_data = response)
+  .then((response) => stadt_data = response)
   // the_div.innerHTML = data.kilometer;
+  animateNumbers(stadt_data)
 }
 
 make_stadtradeln_dings(); // TODO maybe make call from POST?
 
-
+function animateNumbers(data) {
 let old = createNumberArray(0);
 
 function createNumberArray(number) {
@@ -243,8 +244,9 @@ lazytargets.forEach((target) => {
 function triggerObserve() {
   setTimeout(() => {
     old = createNumberArray(0);
-    const diff = stadtradeln_data.kilometer;
+    const diff = data.kilometer;
     const value = parseInt(old.join('')) + diff;
     animateNumber(value, document.querySelector('#stadtradeln-div'));
   }, 1000);
+}
 }
