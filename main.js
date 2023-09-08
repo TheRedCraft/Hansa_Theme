@@ -11,7 +11,9 @@ var counter = 1; //Aktuelles Bild für Image Slider auf 1
 max_bilder = document.querySelectorAll('#SliderImage').length; //Verfügbare Image Slider bilder zählen
 function SetupImageSlider() {
   var last_dot = ''; //letzter Dot/bild
-  document.querySelector('.auto-btn' + counter).style.background = '#3660E3'; //Alle Image slider Buttons auf blau
+  let auto_btn = document.querySelector('.auto-btn' + counter)
+  if (auto_btn == null) return;
+  auto_btn.style.background = '#3660E3'; //Alle Image slider Buttons auf blau
 
   setInterval(function() { //Wiederhole alle 10Sekunden
     last_dot = document.querySelector('.auto-btn' + counter); //Aktuellen Fortschrit laden
@@ -102,3 +104,23 @@ function make_Oberstufe() {
   document.querySelector('.single-post-content').innerHTML = Neue_seite; //Zusammengestze Seite einfügen
   document.getElementById('todelete').remove(); //allte Twitch boxen löschen
 }
+
+async function make_stadtradeln_dings() {
+  let the_div = document.querySelector("#stadtradeln-div");
+  let data;
+  if (the_div == null) {
+    return
+  }
+  await fetch('http://siefke.org:6969/HEIL_JULIUS_hohl_dir_doch_einen_runter.json', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      'Accept': 'application/json',
+    },
+  }).then((response) => response.json())
+  // .then((response) => response.json()) will return a Promise, WTF JavaScript?!?
+  .then((response) => data = response)
+  the_div.innerHTML = data.kilometer;
+}
+
+make_stadtradeln_dings(); // TODO maybe make call from POST?
