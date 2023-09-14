@@ -76,13 +76,23 @@ function dislplayscrolled() {
         document.querySelector('.first_menu').style.transition = '1s';
     }
     if(window.scrollY < 200) { //wenn scroll positioon kleiner als 200 -> speichern das Menü Bar weg sein soll
+      let teststr = "/?s="
+      if(location.href.includes(teststr)) {
+        document.querySelector('.first_menu').dataset.theme = ""
+      } else {
         document.querySelector('.first_menu').dataset.theme = "weg";
+      }
     } else { //Sonst speichern das sie da sein soll
         document.querySelector('.first_menu').dataset.theme = "";
     }
 }
 
-setTimeout(function() { document.querySelector('.first_menu').dataset.theme = "weg"; }, 1 ); //1 Sekunde nachdem die seite geladen wurde speichern das die Menü Bar weg sein soll
+setTimeout(function() { let teststr = "/?s="
+if(location.href.includes(teststr)) {
+  document.querySelector('.first_menu').dataset.theme = ""
+} else {
+  document.querySelector('.first_menu').dataset.theme = "weg";
+} }, 1 ); //1 Sekunde nachdem die seite geladen wurde speichern das die Menü Bar weg sein soll
 window.addEventListener("scroll", dislplayscrolled, false); //Wenn gescrollt wird scroll funktion ausführen
 
 
