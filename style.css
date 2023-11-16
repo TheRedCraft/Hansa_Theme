@@ -535,7 +535,9 @@ a {
 }
 .footer .footer-map-footer-div iframe {
   margin: 20px;
-  width: 35vw;
+  width: 25vw;
+  height: 80%;
+  position: relative;
 }
 
 .main-content {

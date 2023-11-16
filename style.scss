@@ -574,7 +574,9 @@ $content-padding: 20px;
 		height: 100%;
 		iframe {
 			margin: 20px;
-			width: 35vw;
+			width: 25vw;
+			height: 80%;
+			position:relative;
 		}
 	}
 }
