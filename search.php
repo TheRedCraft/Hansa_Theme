@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <?php
 
 $keyword = $_GET['s'];

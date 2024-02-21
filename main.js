@@ -1,11 +1,3 @@
-/*calender = []
-
-function addToCalender(line) {
-  calender.push(line)
-}
-function alertCalender() {
-  makeCalender(calender)
-}*/
 
 var counter = 1; //Aktuelles Bild für Image Slider auf 1
 max_bilder = document.querySelectorAll('#SliderImage').length; //Verfügbare Image Slider bilder zählen
@@ -15,7 +7,7 @@ function SetupImageSlider() {
   if (auto_btn == null) return;
   auto_btn.style.background = '#3660E3'; //Alle Image slider Buttons auf blau
 
-  setInterval(function() { //Wiederhole alle 10Sekunden
+  setInterval(function() { //Wiederhole alle 10 Sekunden
     last_dot = document.querySelector('.auto-btn' + counter); //Aktuellen Fortschrit laden
     counter++; //Fortschritt um 1 erhöhen
 
@@ -79,8 +71,8 @@ function dislplayscrolled() {
     }
     if(window.scrollY < 200) { //wenn scroll positioon kleiner als 200 -> speichern das Menü Bar weg sein soll
       let teststr = "/?s="
-      if(location.href.includes(teststr)) {
-        document.querySelector('.first_menu').dataset.theme = ""
+      if(location.href.includes(teststr) || location.href.includes("category")) {
+        document.querySelector('.first_menu').dataset.theme = "";
       } else {
         document.querySelector('.first_menu').dataset.theme = "weg";
       }
@@ -90,7 +82,7 @@ function dislplayscrolled() {
 }
 
 setTimeout(function() { let teststr = "/?s="
-if(location.href.includes(teststr)) {
+if(location.href.includes(teststr) || location.href.includes("category")) {
   document.querySelector('.first_menu').dataset.theme = ""
 } else {
   document.querySelector('.first_menu').dataset.theme = "weg";

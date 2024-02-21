@@ -7,7 +7,6 @@
 
 
 get_header(); ?>
-
 <?php
 
 global $query_string;
