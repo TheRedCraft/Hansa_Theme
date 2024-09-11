@@ -116,7 +116,7 @@ async function make_stadtradeln_dings() {
   if (kilometer_div == null && co2_div == null && ranking_div == null && radelnde_div == null) {
     return
   }
-  await fetch('https://siefke.org:42069/output.json', {
+  await fetch('https://skss-api.siefke.org/output.json', {
     method: 'GET',
     mode: 'cors',
     headers: {
