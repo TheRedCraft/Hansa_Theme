@@ -1014,6 +1014,12 @@ nav {
 }
 // mobile media tag
 @media (cursor:none), (cursor:coarse), (hover:none), screen and (max-width: 900px) {
+	.single-post {
+		margin-top: 73px;
+	}
+	.single-post-thumbnail-div {
+		display: none;
+	}
 	.twitch-head {
 		font-size: 16px; //iPad Anpassung
 	}

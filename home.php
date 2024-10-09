@@ -76,7 +76,7 @@ if($loop->have_posts()) // Twitch boxen laden/einfügen
 }
 
 ?>
-  <a style="padding-left: 5vw; padding-top: 10px;" href="<?php echo get_site_url() ?>/category/news/">Älter Beiträge anzeigen.</a>
+  <a style="padding-left: 5vw; padding-top: 10px;" href="<?php echo get_site_url() ?>/category/news/">Ältere Beiträge anzeigen.</a>
 <h2 class="section-heading">Organisation</h2> <!--Überschrift-->
 
 
