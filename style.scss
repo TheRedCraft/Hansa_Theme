@@ -586,11 +586,12 @@ $content-padding: 20px;
 }
 
 .single-post-thumbnail-div {
-	height: 60vh;
+	height: 60vh; 
 	background-repeat: no-repeat;
 	background-position-x: 50%;
 	background-position-y: 50%;
 	background-position: center center;
+	background-attachment: fixed;
 	background-size: cover;
 	img {
 		height: 60vh;
@@ -1017,7 +1018,7 @@ nav {
 		margin-top: 73px;
 	}
 	.single-post-thumbnail-div {
-		display: none;
+		background-attachment: scroll;
 	}
 	.twitch-head {
 		font-size: 16px; //iPad Anpassung

@@ -551,6 +551,7 @@ a {
   background-position-x: 50%;
   background-position-y: 50%;
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 .single-post-thumbnail-div img {
@@ -964,7 +965,7 @@ nav .sub-menu li .sub-menu {
     margin-top: 73px;
   }
   .single-post-thumbnail-div {
-    display: none;
+    background-attachment: scroll;
   }
   .twitch-head {
     font-size: 16px;
